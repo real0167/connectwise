@@ -1,0 +1,153 @@
+public function proceedPayment(Request $request) {
+
+        // API endpoint for making payments
+        $url = 'https://api.bill.com/api/v2/CreatePayment';
+
+        // API Token - Replace with your actual API token
+        $apiToken = 'XhCTC0f2TxiXIaHZHljSqLM8LTt/81Zx72+0/QpLYSk';
+
+        // Virtual Credit Card Details
+        $virtualCardData = [
+            'cardNumber' => '4482130177496761', //4111111111111111 Replace with your virtual credit card number
+            'expiryMonth' => '03',
+            'expiryYear' => '2029',
+            'cvv' => '490', // Replace with your virtual card's CVV
+            'billingAddress' => [
+                'addressLine1' => '4521 PGA Boulevard, Unit 234, Palm Beach Gardens, FL 33418',
+                'city' => 'Anytown',
+                'state' => 'CA',
+                'postalCode' => '90210'
+            ]
+        ];
+
+        // Payment Data - Customize based on your actual payment needs
+        $data = [
+            'api_token' => $apiToken,
+            'vendor_id' => 'your-vendor-id',    // Vendor ID (who you are paying)
+            'payment_method' => 'CreditCard',   // Payment method: CreditCard
+            'credit_card' => $virtualCardData,  // Virtual credit card details
+            'amount' => 10.00,                 // Payment amount
+            'currency' => 'USD',                // Currency
+            'memo' => 'Payment for Invoice #12345' // Optional: Memo or reference note
+        ];
+
+        // Initialize cURL
+        $ch = curl_init($url);
+
+        // Set cURL options
+        curl_setopt($ch, CURLOPT_HTTPHEADER, [
+            'Content-Type: application/json',
+            'Accept: application/json'
+        ]);
+
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
+
+        // Execute cURL request
+        $response = curl_exec($ch);
+
+        // Check for errors
+        if (curl_errno($ch)) {
+            echo 'Error:' . curl_error($ch);
+        } else {
+            // Decode and display the response
+            $response_data = json_decode($response, true);
+            echo '<pre>';
+            print_r($response_data);
+            echo '</pre>';
+        }
+
+        // Close the cURL session
+        curl_close($ch);
+    }
+    public function create_user_with_role(Request $request) {
+
+        $url = 'https://gateway.stage.bill.com/connect/v3/spend/users';
+        $apiToken = '4JXyv3frbzRw+wxDGC7qRCmaVW83tyoRkpVxSKUTQvc';
+
+        $data = [
+            'email' => 'real0167@gmail.com', //info@happymusicsupplies.org
+            'firstName' => 'Sahjadul',
+            'lastName' => 'Karim',
+            'role' => 'MEMBER'
+        ];
+
+        $ch = curl_init($url);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, [
+            'apiToken: ' . $apiToken,
+            'Content-Type: application/json',
+            'Accept: application/json'
+        ]);
+
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
+
+        $response = curl_exec($ch);
+
+        return json_decode($response);
+
+        if (curl_errno($ch)) {
+            echo 'Error:' . curl_error($ch);
+        } else {
+            $response_data = json_decode($response, true);
+
+            // Print response data (for debugging)
+            echo '<pre>';
+            print_r($response_data);
+            echo '</pre>';
+        }
+
+        // Close cURL session
+        curl_close($ch);
+    }
+    public function billableOptions(Request $response) {
+        $company = 'cipesol'; //compnay_name = 'Cipe_Solutions'; 4fecc1bf-f944-45aa-b623-60ebbf692e37  //cipesol
+        //$company = '2bcabcd3-49f5-4a67-901e-4d14d6f4ab06';
+        $publicKey = 'mfvuxlMqU7XgjdqZ';
+        $privateKey = 'Z2Om5Ly8qu5QkW94';
+        $authString = base64_encode("$company+$publicKey:$privateKey");
+
+        // Set the API endpoint you want to call
+        $apiEndpoint = 'https://na.myconnectwise.net/v4_6_release/apis/3.0/system/BillableOptions/info';
+        //$apiEndpoint = 'https://na.myconnectwise.net/v4_6_release/apis/3.0/finance/billingCycles';
+
+        // Initialize cURL
+        $ch = curl_init($apiEndpoint);
+
+        // Set the HTTP headers
+        $headers = [
+            "Authorization: Basic $authString",
+            'clientid: 2bcabcd3-49f5-4a67-901e-4d14d6f4ab06',
+        ];
+
+        // Set cURL options
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+
+        // Execute the request
+        $response = curl_exec($ch);
+
+        //Get Header Response Code
+        $response_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+
+        // Check for errors
+        if(curl_errno($ch)) {
+            APILogs::create([
+                'header_response_code' => $response_code,
+                'log_data' => 'Curl error: ' . curl_error($ch),
+                'created_at' => Carbon::parse(now())->toDateTimeString()
+            ]);
+        } else {
+            APILogs::create([
+                'header_response_code' => $response_code,
+                'log_data' => 'Curl success: ' .$response,
+                'created_at' => Carbon::parse(now())->toDateTimeString()
+            ]);
+        }
+
+        // Close the cURL session
+        curl_close($ch);
+        return $response;
+    }
