@@ -1,0 +1,87 @@
+{
+    "results": [
+        {
+            "id": "VXNlcjoxMzkwODY3",
+            "firstName": "Eli",
+            "lastName": "Miller",
+            "email": "emiller@cipesolutions.com",
+            "retired": false,
+            "useCompanyMailingAddress": true,
+            "smsOptIn": false,
+            "hasDateOfBirth": true,
+            "role": "ADMIN",
+            "createdTime": "2024-05-13T22:16:33.000+00:00"
+        },
+        {
+            "id": "VXNlcjoxMTM5NTcy",
+            "firstName": "Ismat",
+            "lastName": "Ishaque",
+            "email": "iishaque@cipesolutions.com",
+            "retired": false,
+            "useCompanyMailingAddress": true,
+            "smsOptIn": false,
+            "hasDateOfBirth": true,
+            "role": "ADMIN",
+            "createdTime": "2023-10-17T18:56:15.000+00:00"
+        },
+        {
+            "id": "VXNlcjo5OTMwNTI=",
+            "firstName": "Josh",
+            "lastName": "Gardner",
+            "email": "joshg@cipesolutions.com",
+            "retired": false,
+            "smsOptIn": false,
+            "hasDateOfBirth": true,
+            "role": "ADMIN",
+            "createdTime": "2023-06-28T19:29:38.000+00:00"
+        },
+        {
+            "id": "VXNlcjoxMDE1Mjgz",
+            "firstName": "Kim",
+            "lastName": "Frost",
+            "email": "kfrost@cipesolutions.com",
+            "retired": false,
+            "smsOptIn": false,
+            "hasDateOfBirth": true,
+            "role": "AUDITOR",
+            "createdTime": "2023-07-19T15:22:31.000+00:00"
+        },
+        {
+            "id": "VXNlcjoxNDU4NjIy",
+            "firstName": "Matt",
+            "lastName": "Hignight",
+            "email": "mhignight@cipesolutions.com",
+            "retired": false,
+            "useCompanyMailingAddress": true,
+            "smsOptIn": false,
+            "hasDateOfBirth": true,
+            "role": "ADMIN",
+            "createdTime": "2024-07-08T11:56:45.000+00:00"
+        },
+        {
+            "id": "VXNlcjoxMDE1Mjgx",
+            "firstName": "Michael",
+            "lastName": "Ruccolo",
+            "email": "mruccolo@cipesolutions.com",
+            "retired": false,
+            "useCompanyMailingAddress": true,
+            "smsOptIn": false,
+            "hasDateOfBirth": true,
+            "role": "ADMIN",
+            "createdTime": "2023-07-19T15:20:50.000+00:00"
+        },
+        {
+            "id": "VXNlcjoxNTI5Njc5",
+            "firstName": "Shahz",
+            "lastName": "Faruk",
+            "email": "shahz@adapto.ca",
+            "receiptEmail": "shahz@adapto.ca",
+            "retired": false,
+            "useCompanyMailingAddress": true,
+            "smsOptIn": false,
+            "hasDateOfBirth": true,
+            "role": "ADMIN",
+            "createdTime": "2024-08-27T21:37:24.000+00:00"
+        }
+    ]
+}

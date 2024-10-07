@@ -74,6 +74,7 @@ class AuthController extends Controller
         curl_close($ch);
         return $response;
     }
+
     public function billableOptions(Request $response) {
         $company = 'cipesol'; //compnay_name = 'Cipe_Solutions'; 4fecc1bf-f944-45aa-b623-60ebbf692e37  //cipesol
         //$company = '2bcabcd3-49f5-4a67-901e-4d14d6f4ab06';

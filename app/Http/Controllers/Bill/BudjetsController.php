@@ -19,7 +19,7 @@ class BudjetsController extends Controller
     public function budjet_list() {
         $access_token = $this->get_access_token();
         $api_token = base64_decode($access_token->api_token);
-        $url = 'https://gateway.stage.bill.com/connect/v3/spend/users';
+        $url = 'https://gateway.stage.bill.com/connect/v3/spend/budgets';
 
         // Initialize cURL session
         $ch = curl_init($url);

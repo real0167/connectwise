@@ -10,8 +10,48 @@ use Illuminate\Http\Request;
 
 class UsersController extends Controller
 {
+    public function tran() {
+        $access_token = $this->get_access_token();
+        $api_token = base64_decode($access_token->api_token);
+        //$url = 'https://gateway.stage.bill.com/connect/v3/spend/users';
+        $url = 'https://gateway.prod.bill.com/connect/v3/spend/transactions?nextPage=YXJyYXljb25uZWN0aW9uOjE5';
+
+        // Initialize cURL session
+        $ch = curl_init($url);
+
+        // Set cURL options
+        curl_setopt($ch, CURLOPT_HTTPHEADER, [
+            'apiToken: ' . $api_token,
+            'Accept: application/json',
+        ]);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); // Return the response instead of outputting it
+
+        // Execute cURL request
+        $response = curl_exec($ch);
+
+        $response_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        // Check for errors
+        if(curl_errno($ch)) {
+            APILogs::create([
+                'header_response_code' => $response_code,
+                'log_data' => 'Curl error: ' . curl_error($ch),
+                'created_at' => Carbon::parse(now())->toDateTimeString()
+            ]);
+        } else {
+            APILogs::create([
+                'header_response_code' => $response_code,
+                'log_data' => 'budjet-list: ' .$response,
+                'created_at' => Carbon::parse(now())->toDateTimeString()
+            ]);
+        }
+
+        // Close cURL session
+        curl_close($ch);
+        return $response;
+    }
+
     public function get_access_token() {
-        return AccessPrivileges::where('api_environment', 'sandbox')
+        return AccessPrivileges::where('api_environment', 'production')
             ->where('status', 1)
             ->first('api_token');
     }
@@ -194,18 +234,19 @@ class UsersController extends Controller
         $ch = curl_init($url);
 
         // Set cURL options
+        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "DELETE");
         curl_setopt($ch, CURLOPT_HTTPHEADER, [
-            'apiToken: ' . $api_token,     // Add the API token in the header
-            'Accept: application/json',    // Specify the content type you are expecting
+            'apiToken: ' . $api_token,
+            'Accept: application/json',
         ]);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); // Return the response instead of outputting it
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
         // Execute cURL request
         $response = curl_exec($ch);
-
         $response_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+
         // Check for errors
-        if(curl_errno($ch)) {
+        if (curl_errno($ch)) {
             APILogs::create([
                 'header_response_code' => $response_code,
                 'log_data' => 'Curl error: ' . curl_error($ch),
@@ -214,7 +255,7 @@ class UsersController extends Controller
         } else {
             APILogs::create([
                 'header_response_code' => $response_code,
-                'log_data' => 'current-user-details: ' .$response,
+                'log_data' => 'current-user-details: ' . $response,
                 'created_at' => Carbon::parse(now())->toDateTimeString()
             ]);
         }
@@ -223,4 +264,57 @@ class UsersController extends Controller
         curl_close($ch);
         return $response;
     }
+
+    public function update_user(Request $request, $user_id) {
+        $access_token = $this->get_access_token();
+        $api_token = base64_decode($access_token->api_token);
+        $url = "https://gateway.stage.bill.com/connect/v3/spend/users/$user_id";
+
+        // Request payload (you can include only fields that need updating)
+        $data = [
+            'hasDateOfBirth' => $request->input('date_of_birth')
+        ];
+
+        // Initialize cURL session
+        $ch = curl_init($url);
+
+        // Set cURL options for PATCH request
+        curl_setopt($ch, CURLOPT_HTTPHEADER, [
+            'apiToken: ' . $api_token,
+            'Content-Type: application/json',
+            'Accept: application/json'
+        ]);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+        // Use PATCH instead of POST
+        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'PATCH');
+
+        curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
+
+        // Execute cURL request and get the response
+        $response = curl_exec($ch);
+
+        // Get Header Response Code
+        $response_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+
+        // Check for errors
+        if (curl_errno($ch)) {
+            APILogs::create([
+                'header_response_code' => $response_code,
+                'log_data' => 'Curl error: ' . curl_error($ch),
+                'created_at' => Carbon::parse(now())->toDateTimeString()
+            ]);
+        } else {
+            APILogs::create([
+                'header_response_code' => $response_code,
+                'log_data' => 'update-user: ' . $response,
+                'created_at' => Carbon::parse(now())->toDateTimeString()
+            ]);
+        }
+
+        // Close the cURL session
+        curl_close($ch);
+        return $response;
+    }
+
 }

@@ -55,6 +55,45 @@ class CardController extends Controller
         return $response;
     }
 
+    public function get_card_details($card_id) {
+        $access_token = $this->get_access_token();
+        $api_token = base64_decode($access_token->api_token);
+        $url = "https://gateway.stage.bill.com/connect/v3/spend/cards/$card_id";
+
+        // Initialize cURL session
+        $ch = curl_init($url);
+
+        // Set cURL options
+        curl_setopt($ch, CURLOPT_HTTPHEADER, [
+            'apiToken: ' . $api_token,     // Add the API token in the header
+            'Accept: application/json',    // Specify the content type you are expecting
+        ]);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); // Return the response instead of outputting it
+
+        // Execute cURL request
+        $response = curl_exec($ch);
+
+        $response_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        // Check for errors
+        if(curl_errno($ch)) {
+            APILogs::create([
+                'header_response_code' => $response_code,
+                'log_data' => 'Curl error: ' . curl_error($ch),
+                'created_at' => Carbon::parse(now())->toDateTimeString()
+            ]);
+        } else {
+            APILogs::create([
+                'header_response_code' => $response_code,
+                'log_data' => 'current-user-details: ' .$response,
+                'created_at' => Carbon::parse(now())->toDateTimeString()
+            ]);
+        }
+
+        // Close cURL session
+        curl_close($ch);
+        return $response;
+    }
+
     public function create_virtual_card() {
         // API endpoint
         $url = 'https://gateway.stage.bill.com/connect/v3/spend/cards';
@@ -110,45 +149,6 @@ class CardController extends Controller
         return $response;
     }
 
-    public function get_card_details($card_id) {
-        $access_token = $this->get_access_token();
-        $api_token = base64_decode($access_token->api_token);
-        $url = "https://gateway.stage.bill.com/connect/v3/spend/cards/$card_id";
-
-        // Initialize cURL session
-        $ch = curl_init($url);
-
-        // Set cURL options
-        curl_setopt($ch, CURLOPT_HTTPHEADER, [
-            'apiToken: ' . $api_token,     // Add the API token in the header
-            'Accept: application/json',    // Specify the content type you are expecting
-        ]);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); // Return the response instead of outputting it
-
-        // Execute cURL request
-        $response = curl_exec($ch);
-
-        $response_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-        // Check for errors
-        if(curl_errno($ch)) {
-            APILogs::create([
-                'header_response_code' => $response_code,
-                'log_data' => 'Curl error: ' . curl_error($ch),
-                'created_at' => Carbon::parse(now())->toDateTimeString()
-            ]);
-        } else {
-            APILogs::create([
-                'header_response_code' => $response_code,
-                'log_data' => 'current-user-details: ' .$response,
-                'created_at' => Carbon::parse(now())->toDateTimeString()
-            ]);
-        }
-
-        // Close cURL session
-        curl_close($ch);
-        return $response;
-    }
-
     /*
      * primary access number
      * json
@@ -192,11 +192,12 @@ class CardController extends Controller
         // Close cURL session
         curl_close($ch);
 
-        return $this->get_jwt_to_pan($response->token);
-        //return $response;
+        //return $this->get_jwt_to_pan($response->token);
+        return $response;
     }
 
     //eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiVTFlWm5WcU01L1ROQlRyYzIzQUJCMFU5Zzd1M3FrY1R6L3BnMWNwSkQwWXR0TTFUbU5lRFVGRnBSK1RZSDFHZmNzYkd0VE1wVEMxd0JURG13Y1Z2eUZYQWdXK0lXVm8xRHNJL05jN0owSS9yMDU0SGdYQjVvbHlCY29MZmk2bG5oUnlOaHRsMm1oVGJSMEZEeGtvVHN4bGpHYkQrT0ZHcWpER2dsRTcweEE9PSIsImV4cCI6MTcyNzA3MTMzNX0.7_BR9V6_D5Z3qChANeN_tP3y-hkWhQBUu4bzk4pn_oQ
+    //eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiTDJMRHVNZnp1c0QyY3NxUlRuUUFwbForcHRPQWZCRVp6N2c3UmRXYy9wd3VMU3Z1YTQ4MVdHRUNnbXRjKzRwK01rQjhJM09kMkpnTUxseXdmU2FTcTZucUJJa0xpeWZ6ZktEM0hxTjhQNm1qdGoyNERONUNGcVEvNmVCaThxMkFJdWYxRkFjc3BMMWJCckR3SCtjNXRNSTF2Zk0yVjc1NzdWa3NxTHhQSnc9PSIsImV4cCI6MTcyNzQ1MTU0MX0.rMgTzUJMjc5ClEjC1fCsverThiXxEMSrZwX2JlnPmhk
     public function get_jwt_to_pan() {
         $access_token = $this->get_access_token();
         $api_token = base64_decode($access_token->api_token);
@@ -204,7 +205,7 @@ class CardController extends Controller
 
         // Prepare the data payload
         $data = json_encode([
-            'token' => 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiVTFlWm5WcU01L1ROQlRyYzIzQUJCMFU5Zzd1M3FrY1R6L3BnMWNwSkQwWXR0TTFUbU5lRFVGRnBSK1RZSDFHZmNzYkd0VE1wVEMxd0JURG13Y1Z2eUZYQWdXK0lXVm8xRHNJL05jN0owSS9yMDU0SGdYQjVvbHlCY29MZmk2bG5oUnlOaHRsMm1oVGJSMEZEeGtvVHN4bGpHYkQrT0ZHcWpER2dsRTcweEE9PSIsImV4cCI6MTcyNzA3MTMzNX0.7_BR9V6_D5Z3qChANeN_tP3y-hkWhQBUu4bzk4pn_oQ'
+            'token' => "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiTDJMRHVNZnp1c0QyY3NxUlRuUUFwbForcHRPQWZCRVp6N2c3UmRXYy9wd3VMU3Z1YTQ4MVdHRUNnbXRjKzRwK01rQjhJM09kMkpnTUxseXdmU2FTcTZucUJJa0xpeWZ6ZktEM0hxTjhQNm1qdGoyNERONUNGcVEvNmVCaThxMkFJdWYxRkFjc3BMMWJCckR3SCtjNXRNSTF2Zk0yVjc1NzdWa3NxTHhQSnc9PSIsImV4cCI6MTcyNzQ1MTU0MX0.rMgTzUJMjc5ClEjC1fCsverThiXxEMSrZwX2JlnPmhk"
         ]);
 
         // Initialize cURL
