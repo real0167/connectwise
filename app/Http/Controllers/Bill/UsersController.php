@@ -10,11 +10,18 @@ use Illuminate\Http\Request;
 
 class UsersController extends Controller
 {
-    public function tran() {
+    public function get_access_token() {
+        return AccessPrivileges::where('api_environment', 'production')
+            ->where('status', 1)
+            ->first(['api_token','env_base_url']);
+    }
+
+    public function user_list(Request $request) {
         $access_token = $this->get_access_token();
         $api_token = base64_decode($access_token->api_token);
         //$url = 'https://gateway.stage.bill.com/connect/v3/spend/users';
-        $url = 'https://gateway.prod.bill.com/connect/v3/spend/transactions?nextPage=YXJyYXljb25uZWN0aW9uOjE5';
+        $base_url = base64_decode($access_token->env_base_url);
+        $url = "$base_url"."$request->api_path"."$request->pagination";
 
         // Initialize cURL session
         $ch = curl_init($url);
@@ -48,12 +55,6 @@ class UsersController extends Controller
         // Close cURL session
         curl_close($ch);
         return $response;
-    }
-
-    public function get_access_token() {
-        return AccessPrivileges::where('api_environment', 'production')
-            ->where('status', 1)
-            ->first('api_token');
     }
 
     public function create_user_with_role(Request $request) {
@@ -104,45 +105,6 @@ class UsersController extends Controller
         }
 
         // Close the cURL session
-        curl_close($ch);
-        return $response;
-    }
-
-    public function user_list() {
-        $access_token = $this->get_access_token();
-        $api_token = base64_decode($access_token->api_token);
-        $url = 'https://gateway.stage.bill.com/connect/v3/spend/users';
-
-        // Initialize cURL session
-        $ch = curl_init($url);
-
-        // Set cURL options
-        curl_setopt($ch, CURLOPT_HTTPHEADER, [
-            'apiToken: ' . $api_token,
-            'Accept: application/json',
-        ]);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); // Return the response instead of outputting it
-
-        // Execute cURL request
-        $response = curl_exec($ch);
-
-        $response_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-        // Check for errors
-        if(curl_errno($ch)) {
-            APILogs::create([
-                'header_response_code' => $response_code,
-                'log_data' => 'Curl error: ' . curl_error($ch),
-                'created_at' => Carbon::parse(now())->toDateTimeString()
-            ]);
-        } else {
-            APILogs::create([
-                'header_response_code' => $response_code,
-                'log_data' => 'budjet-list: ' .$response,
-                'created_at' => Carbon::parse(now())->toDateTimeString()
-            ]);
-        }
-
-        // Close cURL session
         curl_close($ch);
         return $response;
     }
@@ -316,5 +278,4 @@ class UsersController extends Controller
         curl_close($ch);
         return $response;
     }
-
 }

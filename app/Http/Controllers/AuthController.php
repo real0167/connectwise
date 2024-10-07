@@ -83,8 +83,8 @@ class AuthController extends Controller
         $authString = base64_encode("$company+$publicKey:$privateKey");
 
         // Set the API endpoint you want to call
-        $apiEndpoint = 'https://na.myconnectwise.net/v4_6_release/apis/3.0/system/BillableOptions/info';
         //$apiEndpoint = 'https://na.myconnectwise.net/v4_6_release/apis/3.0/finance/billingCycles';
+        $apiEndpoint = 'https://na.myconnectwise.net/v4_6_release/apis/3.0/system/BillableOptions/info';
 
         // Initialize cURL
         $ch = curl_init($apiEndpoint);
@@ -125,7 +125,7 @@ class AuthController extends Controller
         return $response;
     }
 
-    public function common_api_org(Request $response) {
+    public function common_api_old(Request $response) {
         $company = 'cipesol'; //compnay_name = 'Cipe_Solutions'; 4fecc1bf-f944-45aa-b623-60ebbf692e37  //cipesol
         //$company = '2bcabcd3-49f5-4a67-901e-4d14d6f4ab06';
         $publicKey = 'mfvuxlMqU7XgjdqZ';
@@ -133,8 +133,8 @@ class AuthController extends Controller
         $authString = base64_encode("$company+$publicKey:$privateKey");
 
         // Set the API endpoint you want to call
-        $apiEndpoint = 'https://na.myconnectwise.net/v4_6_release/apis/3.0/company/companies/info';
-        //$apiEndpoint = 'https://na.myconnectwise.net/v4_6_release/apis/3.0/finance/billingCycles';
+        //$apiEndpoint = 'https://na.myconnectwise.net/v4_6_release/apis/3.0/company/companies/info';
+        $apiEndpoint = 'https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/contacts/182';
 
         // Initialize cURL
         $ch = curl_init($apiEndpoint);
