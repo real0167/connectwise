@@ -45,6 +45,9 @@ class TransactionController extends Controller
         return $response;
     }
 
+    /*
+     * this function called in get_transaction_list function
+     */
     public function insert_to_db($response) {
         $data = json_decode($response); $count = 0;
         foreach ($data->results as $dt) {
