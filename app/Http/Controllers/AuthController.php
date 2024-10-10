@@ -241,6 +241,44 @@ class AuthController extends Controller
         ];*/
     }
 
+    public function sub_api(Request $request) {
+        $access_token = $this->get_access_token();
+        $api_token = base64_decode($access_token->api_token);
+
+        $company = $access_token->company_name;
+        $publicKey = base64_decode($access_token->public_key);
+        $privateKey = base64_decode($access_token->private_key);
+        $authString = base64_encode("$company+$publicKey:$privateKey");
+        $client_id = base64_decode($access_token->client_id);
+
+        // Set the API endpoint you want to call
+        //$apiEndpoint = $request->api_path;
+        $apiEndpoint = "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/mycompany/portalcalendar/1";
+
+        // Initialize cURL
+        $ch = curl_init($apiEndpoint);
+
+        // Set the HTTP headers
+        $headers = [
+            "Authorization: Basic $authString",
+            "clientid: $client_id",
+        ];
+
+        // Set cURL options
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+
+        // Execute the request
+        $response = curl_exec($ch);
+
+        //Get Header Response Code
+        $response_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+
+        // Close the cURL session
+        curl_close($ch);
+        return $response;
+    }
+
     public function agreements(Request $request) {
         $company = 'cipesol'; //compnay_name = 'Cipe_Solutions'; 4fecc1bf-f944-45aa-b623-60ebbf692e37  //cipesol
         //$company = '2bcabcd3-49f5-4a67-901e-4d14d6f4ab06';

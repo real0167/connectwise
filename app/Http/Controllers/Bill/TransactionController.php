@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Bill;
 
+use App\Http\Controllers\Bill\CardController;
 use App\Http\Controllers\Controller;
 use App\Models\Bill\AccessPrivileges;
 use App\Models\Cw\TransactionModel;
@@ -39,7 +40,7 @@ class TransactionController extends Controller
         //~ Get Http header response
         $response_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 
-        //return $this->insert_to_db($response);
+        $this->insert_to_db($response);
         // Close cURL session
         curl_close($ch);
         return $response;
@@ -51,6 +52,9 @@ class TransactionController extends Controller
     public function insert_to_db($response) {
         $data = json_decode($response); $count = 0;
         foreach ($data->results as $dt) {
+            $crdCtrl = new CardController();
+            $identifier_data = $crdCtrl->get_card_details($dt->cardId);
+            $identifier = json_decode($identifier_data);
             TransactionModel::Create([
                 "tran_id" => $dt->id,
                 "is_locked" => $dt->isLocked,
@@ -73,7 +77,8 @@ class TransactionController extends Controller
                 "transacted_amount" => $dt->transactedAmount,
                 "fees" => $dt->fees,
                 "receipt_status" => $dt->receiptStatus,
-                "card_id" => base64_decode($dt->cardId),
+                "card_id" => $dt->cardId,
+                "identifier_from_bill" => $identifier->name, //base64_decode($dt->cardId),
                 "receipt_sync_status" => $dt->receiptSyncStatus,
                 "merchant_category_code" => $dt->merchantCategoryCode,
                 "created_at" => Carbon::parse(now())->toDateTimeString(),

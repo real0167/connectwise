@@ -11,9 +11,9 @@ use Illuminate\Http\Request;
 class CardController extends Controller
 {
     public function get_access_token() {
-        return AccessPrivileges::where('api_environment', 'sandbox')
+        return AccessPrivileges::where('api_environment', 'production')
             ->where('status', 1)
-            ->first('api_token');
+            ->first(['api_token','env_base_url']);
     }
 
     public function card_list() {
@@ -58,7 +58,8 @@ class CardController extends Controller
     public function get_card_details($card_id) {
         $access_token = $this->get_access_token();
         $api_token = base64_decode($access_token->api_token);
-        $url = "https://gateway.stage.bill.com/connect/v3/spend/cards/$card_id";
+        $base_url = base64_decode($access_token->env_base_url);
+        $url = "$base_url"."/spend/cards/$card_id";
 
         // Initialize cURL session
         $ch = curl_init($url);
@@ -74,20 +75,6 @@ class CardController extends Controller
         $response = curl_exec($ch);
 
         $response_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-        // Check for errors
-        if(curl_errno($ch)) {
-            APILogs::create([
-                'header_response_code' => $response_code,
-                'log_data' => 'Curl error: ' . curl_error($ch),
-                'created_at' => Carbon::parse(now())->toDateTimeString()
-            ]);
-        } else {
-            APILogs::create([
-                'header_response_code' => $response_code,
-                'log_data' => 'current-user-details: ' .$response,
-                'created_at' => Carbon::parse(now())->toDateTimeString()
-            ]);
-        }
 
         // Close cURL session
         curl_close($ch);

@@ -20,6 +20,8 @@ use \App\Http\Controllers\Bill\TransactionController;
 Route::post('auth-user', [AuthController::class, 'userAuthentication']);
 Route::post('billable-options', [AuthController::class, 'billableOptions']);
 Route::post('common', [AuthController::class, 'common_api']);
+Route::get('sub-api', [AuthController::class, 'sub_api']);
+
 Route::get('agreements', [AuthController::class, 'agreements']);
 
 
