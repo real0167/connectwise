@@ -1,0 +1,2622 @@
+[
+    {
+        "id": 1,
+        "catalogItem": {
+            "id": 14,
+            "identifier": "0832-004",
+            "_info": {
+                "typeId": "4",
+                "catalog_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/catalog/14"
+            }
+        },
+        "description": "Companion NVR Recorder",
+        "sequenceNumber": 1.000000,
+        "quantity": 1.00,
+        "unitOfMeasure": {
+            "id": 1,
+            "name": "Each",
+            "_info": {
+                "uom_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/unitOfMeasures/1"
+            }
+        },
+        "price": 697.000000,
+        "cost": 413.000000,
+        "extPrice": 697.000000,
+        "extCost": 413.000000,
+        "margin": 284.000000,
+        "agreementAmount": 0.00,
+        "billableOption": "Billable",
+        "locationId": 11,
+        "location": {
+            "id": 11,
+            "name": "Palm Beach Office",
+            "_info": {
+                "location_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/locations/11"
+            }
+        },
+        "businessUnitId": 2,
+        "businessUnit": {
+            "id": 2,
+            "name": "Sales",
+            "_info": {
+                "department_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/departments/2"
+            }
+        },
+        "vendorSku": "",
+        "taxableFlag": false,
+        "dropshipFlag": false,
+        "specialOrderFlag": false,
+        "phaseProductFlag": false,
+        "cancelledFlag": false,
+        "quantityCancelled": 0.00,
+        "customerDescription": "Recording Device for CCTV cameras",
+        "productSuppliedFlag": false,
+        "subContractorAmountLimit": 0.00,
+        "opportunity": {
+            "id": 2,
+            "name": "JM34009 Commack",
+            "_info": {
+                "opportunity_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//sales/opportunities/2"
+            }
+        },
+        "calculatedPriceFlag": false,
+        "calculatedCostFlag": false,
+        "forecastDetailId": 1,
+        "purchaseDate": "2018-08-21T04:00:00Z",
+        "taxCode": {
+            "id": 8,
+            "name": "Tax-State",
+            "_info": {
+                "taxCode_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//finance/taxCodes/8"
+            }
+        },
+        "listPrice": 529.000000,
+        "company": {
+            "id": 19302,
+            "identifier": "JM34009",
+            "name": "Jersey Mikes 34009",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19302"
+            }
+        },
+        "forecastStatus": {
+            "id": 3,
+            "name": "Lost",
+            "_info": {
+                "status_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//sales/opportunities/statuses/3"
+            }
+        },
+        "productClass": "NonInventory",
+        "needToPurchaseFlag": false,
+        "minimumStockFlag": false,
+        "poApprovedFlag": false,
+        "uom": "Each",
+        "_info": {
+            "lastUpdated": "2018-12-10T19:27:03Z",
+            "updatedBy": "awilson"
+        }
+    },
+    {
+        "id": 19,
+        "catalogItem": {
+            "id": 35,
+            "identifier": "Basic Network Package",
+            "_info": {
+                "typeId": "3",
+                "catalog_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/catalog/35"
+            }
+        },
+        "description": "Network, Phones,",
+        "sequenceNumber": 1.000000,
+        "quantity": 1.00,
+        "unitOfMeasure": {
+            "id": 1,
+            "name": "Each",
+            "_info": {
+                "uom_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/unitOfMeasures/1"
+            }
+        },
+        "price": 688.000000,
+        "cost": 456.000000,
+        "extPrice": 688.000000,
+        "extCost": 456.000000,
+        "margin": 232.000000,
+        "agreementAmount": 0.00,
+        "billableOption": "Billable",
+        "locationId": 11,
+        "location": {
+            "id": 11,
+            "name": "Palm Beach Office",
+            "_info": {
+                "location_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/locations/11"
+            }
+        },
+        "businessUnitId": 2,
+        "businessUnit": {
+            "id": 2,
+            "name": "Sales",
+            "_info": {
+                "department_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/departments/2"
+            }
+        },
+        "vendorSku": "",
+        "taxableFlag": false,
+        "dropshipFlag": false,
+        "specialOrderFlag": false,
+        "phaseProductFlag": false,
+        "cancelledFlag": false,
+        "quantityCancelled": 0.00,
+        "customerDescription": "Includes 12U swinging network rack with glass security door, shelves, UPS, power toggle switch, Cloud managed Jersey Mikes WIFI, 1 VoIP base station, 2 cordless phones with JM extensions, mini PC for remote access, support and troubleshooting.",
+        "productSuppliedFlag": false,
+        "project": {
+            "id": 39,
+            "name": "JM6053 Vienna",
+            "_info": {
+                "project_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//project/projects/39",
+                "billingMethod": "A",
+                "status": "Closed"
+            }
+        },
+        "opportunity": {
+            "id": 3,
+            "name": "Service Transfer JM6053",
+            "_info": {
+                "opportunity_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//sales/opportunities/3"
+            }
+        },
+        "calculatedPriceFlag": false,
+        "calculatedCostFlag": false,
+        "forecastDetailId": 16,
+        "purchaseDate": "2018-09-04T04:00:00Z",
+        "taxCode": {
+            "id": 8,
+            "name": "Tax-State",
+            "_info": {
+                "taxCode_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//finance/taxCodes/8"
+            }
+        },
+        "listPrice": 0.000000,
+        "company": {
+            "id": 19371,
+            "identifier": "JM6053",
+            "name": "Jersey Mikes 6053",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19371"
+            }
+        },
+        "forecastStatus": {
+            "id": 2,
+            "name": "Won",
+            "_info": {
+                "status_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//sales/opportunities/statuses/2"
+            }
+        },
+        "productClass": "Bundle",
+        "needToPurchaseFlag": false,
+        "minimumStockFlag": false,
+        "poApprovedFlag": false,
+        "uom": "Each",
+        "_info": {
+            "lastUpdated": "2024-07-22T19:53:42Z",
+            "updatedBy": "emiller"
+        }
+    },
+    {
+        "id": 20,
+        "catalogItem": {
+            "id": 31,
+            "identifier": "GC2E-ALARM.COM (STOCK)",
+            "_info": {
+                "typeId": "3",
+                "catalog_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/catalog/31"
+            }
+        },
+        "description": "Standard Alarm Package",
+        "sequenceNumber": 2.000000,
+        "quantity": 1.00,
+        "unitOfMeasure": {
+            "id": 1,
+            "name": "Each",
+            "_info": {
+                "uom_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/unitOfMeasures/1"
+            }
+        },
+        "price": 395.000000,
+        "cost": 244.000000,
+        "extPrice": 395.000000,
+        "extCost": 244.000000,
+        "margin": 151.000000,
+        "agreementAmount": 0.00,
+        "billableOption": "Billable",
+        "locationId": 11,
+        "location": {
+            "id": 11,
+            "name": "Palm Beach Office",
+            "_info": {
+                "location_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/locations/11"
+            }
+        },
+        "businessUnitId": 2,
+        "businessUnit": {
+            "id": 2,
+            "name": "Sales",
+            "_info": {
+                "department_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/departments/2"
+            }
+        },
+        "vendorSku": "",
+        "taxableFlag": false,
+        "dropshipFlag": false,
+        "specialOrderFlag": false,
+        "phaseProductFlag": false,
+        "cancelledFlag": false,
+        "quantityCancelled": 0.00,
+        "customerDescription": "Standard Alarm Package: Wireless 4G alarm, includes: 1 keypad, 1 base station, 1 motion sensor, 2 door sensors.",
+        "productSuppliedFlag": false,
+        "project": {
+            "id": 39,
+            "name": "JM6053 Vienna",
+            "_info": {
+                "project_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//project/projects/39",
+                "billingMethod": "A",
+                "status": "Closed"
+            }
+        },
+        "opportunity": {
+            "id": 3,
+            "name": "Service Transfer JM6053",
+            "_info": {
+                "opportunity_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//sales/opportunities/3"
+            }
+        },
+        "calculatedPriceFlag": false,
+        "calculatedCostFlag": false,
+        "forecastDetailId": 17,
+        "purchaseDate": "2018-09-04T04:00:00Z",
+        "taxCode": {
+            "id": 8,
+            "name": "Tax-State",
+            "_info": {
+                "taxCode_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//finance/taxCodes/8"
+            }
+        },
+        "listPrice": 399.000000,
+        "company": {
+            "id": 19371,
+            "identifier": "JM6053",
+            "name": "Jersey Mikes 6053",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19371"
+            }
+        },
+        "forecastStatus": {
+            "id": 2,
+            "name": "Won",
+            "_info": {
+                "status_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//sales/opportunities/statuses/2"
+            }
+        },
+        "productClass": "Bundle",
+        "needToPurchaseFlag": false,
+        "minimumStockFlag": false,
+        "poApprovedFlag": false,
+        "uom": "Each",
+        "_info": {
+            "lastUpdated": "2024-07-22T19:53:42Z",
+            "updatedBy": "emiller"
+        }
+    },
+    {
+        "id": 21,
+        "catalogItem": {
+            "id": 45,
+            "identifier": "Cloud Box",
+            "_info": {
+                "typeId": "4",
+                "catalog_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/catalog/45"
+            }
+        },
+        "description": "Player Only",
+        "sequenceNumber": 3.000000,
+        "quantity": 1.00,
+        "unitOfMeasure": {
+            "id": 1,
+            "name": "Each",
+            "_info": {
+                "uom_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/unitOfMeasures/1"
+            }
+        },
+        "price": 250.000000,
+        "cost": 215.000000,
+        "extPrice": 250.000000,
+        "extCost": 215.000000,
+        "margin": 35.000000,
+        "agreementAmount": 0.00,
+        "billableOption": "Billable",
+        "locationId": 11,
+        "location": {
+            "id": 11,
+            "name": "Palm Beach Office",
+            "_info": {
+                "location_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/locations/11"
+            }
+        },
+        "businessUnitId": 2,
+        "businessUnit": {
+            "id": 2,
+            "name": "Sales",
+            "_info": {
+                "department_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/departments/2"
+            }
+        },
+        "vendorSku": "",
+        "taxableFlag": false,
+        "dropshipFlag": false,
+        "specialOrderFlag": false,
+        "phaseProductFlag": false,
+        "cancelledFlag": false,
+        "quantityCancelled": 0.00,
+        "customerDescription": "Retail Radio Player Only",
+        "productSuppliedFlag": false,
+        "project": {
+            "id": 39,
+            "name": "JM6053 Vienna",
+            "_info": {
+                "project_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//project/projects/39",
+                "billingMethod": "A",
+                "status": "Closed"
+            }
+        },
+        "opportunity": {
+            "id": 3,
+            "name": "Service Transfer JM6053",
+            "_info": {
+                "opportunity_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//sales/opportunities/3"
+            }
+        },
+        "calculatedPriceFlag": false,
+        "calculatedCostFlag": false,
+        "forecastDetailId": 18,
+        "purchaseDate": "2018-09-04T04:00:00Z",
+        "taxCode": {
+            "id": 8,
+            "name": "Tax-State",
+            "_info": {
+                "taxCode_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//finance/taxCodes/8"
+            }
+        },
+        "listPrice": 99.000000,
+        "company": {
+            "id": 19371,
+            "identifier": "JM6053",
+            "name": "Jersey Mikes 6053",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19371"
+            }
+        },
+        "forecastStatus": {
+            "id": 2,
+            "name": "Won",
+            "_info": {
+                "status_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//sales/opportunities/statuses/2"
+            }
+        },
+        "productClass": "NonInventory",
+        "needToPurchaseFlag": false,
+        "minimumStockFlag": false,
+        "poApprovedFlag": false,
+        "uom": "Each",
+        "_info": {
+            "lastUpdated": "2024-07-22T19:53:43Z",
+            "updatedBy": "emiller"
+        }
+    },
+    {
+        "id": 22,
+        "catalogItem": {
+            "id": 33,
+            "identifier": "Security Camera Package",
+            "_info": {
+                "typeId": "3",
+                "catalog_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/catalog/33"
+            }
+        },
+        "description": "Standard IP Camera System",
+        "sequenceNumber": 4.000000,
+        "quantity": 1.00,
+        "unitOfMeasure": {
+            "id": 1,
+            "name": "Each",
+            "_info": {
+                "uom_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/unitOfMeasures/1"
+            }
+        },
+        "price": 1350.000000,
+        "cost": 800.000000,
+        "extPrice": 1350.000000,
+        "extCost": 800.000000,
+        "margin": 550.000000,
+        "agreementAmount": 0.00,
+        "billableOption": "Billable",
+        "locationId": 11,
+        "location": {
+            "id": 11,
+            "name": "Palm Beach Office",
+            "_info": {
+                "location_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/locations/11"
+            }
+        },
+        "businessUnitId": 2,
+        "businessUnit": {
+            "id": 2,
+            "name": "Sales",
+            "_info": {
+                "department_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/departments/2"
+            }
+        },
+        "vendorSku": "",
+        "taxableFlag": false,
+        "dropshipFlag": false,
+        "specialOrderFlag": false,
+        "phaseProductFlag": false,
+        "cancelledFlag": false,
+        "quantityCancelled": 0.00,
+        "customerDescription": "Standard AXIS IP camera system. Includes 2 TB, 8 channel NVR with PoE, and 4 IP Dome Cameras, and network cable. Cameras and recorder come with 36 month warranty. ",
+        "productSuppliedFlag": false,
+        "project": {
+            "id": 39,
+            "name": "JM6053 Vienna",
+            "_info": {
+                "project_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//project/projects/39",
+                "billingMethod": "A",
+                "status": "Closed"
+            }
+        },
+        "opportunity": {
+            "id": 3,
+            "name": "Service Transfer JM6053",
+            "_info": {
+                "opportunity_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//sales/opportunities/3"
+            }
+        },
+        "calculatedPriceFlag": false,
+        "calculatedCostFlag": false,
+        "forecastDetailId": 19,
+        "purchaseDate": "2018-09-04T04:00:00Z",
+        "taxCode": {
+            "id": 8,
+            "name": "Tax-State",
+            "_info": {
+                "taxCode_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//finance/taxCodes/8"
+            }
+        },
+        "listPrice": 1950.000000,
+        "company": {
+            "id": 19371,
+            "identifier": "JM6053",
+            "name": "Jersey Mikes 6053",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19371"
+            }
+        },
+        "forecastStatus": {
+            "id": 2,
+            "name": "Won",
+            "_info": {
+                "status_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//sales/opportunities/statuses/2"
+            }
+        },
+        "productClass": "Bundle",
+        "needToPurchaseFlag": false,
+        "minimumStockFlag": false,
+        "poApprovedFlag": false,
+        "uom": "Each",
+        "_info": {
+            "lastUpdated": "2024-07-22T19:53:43Z",
+            "updatedBy": "emiller"
+        }
+    },
+    {
+        "id": 23,
+        "catalogItem": {
+            "id": 36,
+            "identifier": "POS Installation  - Service",
+            "_info": {
+                "typeId": "2",
+                "catalog_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/catalog/36"
+            }
+        },
+        "description": "Standard Tech Installation",
+        "sequenceNumber": 5.000000,
+        "quantity": 1.00,
+        "unitOfMeasure": {
+            "id": 1,
+            "name": "Each",
+            "_info": {
+                "uom_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/unitOfMeasures/1"
+            }
+        },
+        "price": 800.000000,
+        "cost": 500.000000,
+        "extPrice": 800.000000,
+        "extCost": 500.000000,
+        "margin": 300.000000,
+        "agreementAmount": 0.00,
+        "billableOption": "Billable",
+        "locationId": 11,
+        "location": {
+            "id": 11,
+            "name": "Palm Beach Office",
+            "_info": {
+                "location_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/locations/11"
+            }
+        },
+        "businessUnitId": 2,
+        "businessUnit": {
+            "id": 2,
+            "name": "Sales",
+            "_info": {
+                "department_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/departments/2"
+            }
+        },
+        "vendorSku": "",
+        "taxableFlag": false,
+        "dropshipFlag": false,
+        "specialOrderFlag": false,
+        "phaseProductFlag": false,
+        "cancelledFlag": false,
+        "quantityCancelled": 0.00,
+        "customerDescription": "Includes installation and configuration of router with GLS, installation of 1 POS terminal, testing with tech support, installation of data cable and speaker wire, security cameras installation, audio system installation, and rack installation.  ",
+        "productSuppliedFlag": false,
+        "project": {
+            "id": 39,
+            "name": "JM6053 Vienna",
+            "_info": {
+                "project_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//project/projects/39",
+                "billingMethod": "A",
+                "status": "Closed"
+            }
+        },
+        "opportunity": {
+            "id": 3,
+            "name": "Service Transfer JM6053",
+            "_info": {
+                "opportunity_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//sales/opportunities/3"
+            }
+        },
+        "calculatedPriceFlag": false,
+        "calculatedCostFlag": false,
+        "forecastDetailId": 20,
+        "purchaseDate": "2018-09-04T04:00:00Z",
+        "taxCode": {
+            "id": 8,
+            "name": "Tax-State",
+            "_info": {
+                "taxCode_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//finance/taxCodes/8"
+            }
+        },
+        "listPrice": 125.000000,
+        "company": {
+            "id": 19371,
+            "identifier": "JM6053",
+            "name": "Jersey Mikes 6053",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19371"
+            }
+        },
+        "forecastStatus": {
+            "id": 2,
+            "name": "Won",
+            "_info": {
+                "status_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//sales/opportunities/statuses/2"
+            }
+        },
+        "productClass": "Service",
+        "needToPurchaseFlag": false,
+        "minimumStockFlag": false,
+        "poApprovedFlag": false,
+        "uom": "Each",
+        "_info": {
+            "lastUpdated": "2024-07-22T19:53:43Z",
+            "updatedBy": "emiller"
+        }
+    },
+    {
+        "id": 24,
+        "catalogItem": {
+            "id": 38,
+            "identifier": "Travel",
+            "_info": {
+                "typeId": "1",
+                "catalog_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/catalog/38"
+            }
+        },
+        "description": "Zone 1",
+        "sequenceNumber": 6.000000,
+        "quantity": 1.00,
+        "unitOfMeasure": {
+            "id": 1,
+            "name": "Each",
+            "_info": {
+                "uom_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/unitOfMeasures/1"
+            }
+        },
+        "price": 350.000000,
+        "cost": 300.000000,
+        "extPrice": 350.000000,
+        "extCost": 300.000000,
+        "margin": 50.000000,
+        "agreementAmount": 0.00,
+        "billableOption": "Billable",
+        "locationId": 11,
+        "location": {
+            "id": 11,
+            "name": "Palm Beach Office",
+            "_info": {
+                "location_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/locations/11"
+            }
+        },
+        "businessUnitId": 2,
+        "businessUnit": {
+            "id": 2,
+            "name": "Sales",
+            "_info": {
+                "department_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/departments/2"
+            }
+        },
+        "vendorSku": "",
+        "taxableFlag": false,
+        "dropshipFlag": false,
+        "specialOrderFlag": false,
+        "phaseProductFlag": false,
+        "cancelledFlag": false,
+        "quantityCancelled": 0.00,
+        "customerDescription": "Travel Fee - Zone 1",
+        "productSuppliedFlag": false,
+        "subContractorAmountLimit": 0.00,
+        "opportunity": {
+            "id": 3,
+            "name": "Service Transfer JM6053",
+            "_info": {
+                "opportunity_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//sales/opportunities/3"
+            }
+        },
+        "calculatedPriceFlag": false,
+        "calculatedCostFlag": false,
+        "forecastDetailId": 21,
+        "taxCode": {
+            "id": 8,
+            "name": "Tax-State",
+            "_info": {
+                "taxCode_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//finance/taxCodes/8"
+            }
+        },
+        "listPrice": 0.000000,
+        "company": {
+            "id": 19371,
+            "identifier": "JM6053",
+            "name": "Jersey Mikes 6053",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19371"
+            }
+        },
+        "forecastStatus": {
+            "id": 2,
+            "name": "Won",
+            "_info": {
+                "status_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//sales/opportunities/statuses/2"
+            }
+        },
+        "productClass": "Service",
+        "needToPurchaseFlag": false,
+        "minimumStockFlag": false,
+        "poApprovedFlag": false,
+        "uom": "Each",
+        "_info": {
+            "lastUpdated": "2018-09-04T14:16:46Z",
+            "updatedBy": "awilson"
+        }
+    },
+    {
+        "id": 30,
+        "catalogItem": {
+            "id": 33,
+            "identifier": "Security Camera Package",
+            "_info": {
+                "typeId": "3",
+                "catalog_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/catalog/33"
+            }
+        },
+        "description": "Standard IP Camera System",
+        "sequenceNumber": 1.000000,
+        "quantity": 1.00,
+        "unitOfMeasure": {
+            "id": 1,
+            "name": "Each",
+            "_info": {
+                "uom_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/unitOfMeasures/1"
+            }
+        },
+        "price": 1950.000000,
+        "cost": 1112.000000,
+        "extPrice": 1950.000000,
+        "extCost": 1112.000000,
+        "discount": 0.000000,
+        "margin": 838.000000,
+        "agreementAmount": 0.00,
+        "billableOption": "Billable",
+        "locationId": 11,
+        "location": {
+            "id": 11,
+            "name": "Palm Beach Office",
+            "_info": {
+                "location_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/locations/11"
+            }
+        },
+        "businessUnitId": 1,
+        "businessUnit": {
+            "id": 1,
+            "name": "Technical Support",
+            "_info": {
+                "department_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/departments/1"
+            }
+        },
+        "vendor": {
+            "id": 19303,
+            "identifier": "ADI",
+            "name": "ADI",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19303"
+            }
+        },
+        "taxableFlag": false,
+        "dropshipFlag": false,
+        "specialOrderFlag": false,
+        "phaseProductFlag": false,
+        "cancelledFlag": false,
+        "quantityCancelled": 0.00,
+        "customerDescription": "Standard AXIS IP camera system. Includes 2 TB, 8 channel NVR with PoE, and 6 IP Dome Cameras, and network cable. Cameras and recorder come with 36 month warranty. ",
+        "productSuppliedFlag": false,
+        "project": {
+            "id": 6,
+            "name": "JM13161 Gulf Breeze",
+            "_info": {
+                "project_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//project/projects/6",
+                "billingMethod": "A",
+                "status": "Closed"
+            }
+        },
+        "calculatedPriceFlag": false,
+        "calculatedCostFlag": true,
+        "taxCode": {
+            "id": 16,
+            "name": "AVATAX",
+            "_info": {
+                "taxCode_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//finance/taxCodes/16"
+            }
+        },
+        "listPrice": 1950.000000,
+        "company": {
+            "id": 19308,
+            "identifier": "JM13161",
+            "name": "Jersey Mikes 13161",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19308"
+            }
+        },
+        "productClass": "Bundle",
+        "needToPurchaseFlag": false,
+        "minimumStockFlag": false,
+        "calculatedPrice": 1444.00000000,
+        "calculatedCost": 1112.00000000,
+        "poApprovedFlag": false,
+        "uom": "Each",
+        "_info": {
+            "lastUpdated": "2020-06-09T17:58:23Z"
+        }
+    },
+    {
+        "id": 31,
+        "catalogItem": {
+            "id": 14,
+            "identifier": "0832-004",
+            "_info": {
+                "typeId": "4",
+                "catalog_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/catalog/14"
+            }
+        },
+        "description": "Companion NVR 8CH 2TB ",
+        "sequenceNumber": 1.010000,
+        "quantity": 1.00,
+        "unitOfMeasure": {
+            "id": 1,
+            "name": "Each",
+            "_info": {
+                "uom_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/unitOfMeasures/1"
+            }
+        },
+        "price": 529.000000,
+        "cost": 407.000000,
+        "extPrice": 529.000000,
+        "extCost": 407.000000,
+        "discount": 0.000000,
+        "margin": 122.000000,
+        "agreementAmount": 0.00,
+        "billableOption": "Billable",
+        "locationId": 11,
+        "location": {
+            "id": 11,
+            "name": "Palm Beach Office",
+            "_info": {
+                "location_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/locations/11"
+            }
+        },
+        "businessUnitId": 1,
+        "businessUnit": {
+            "id": 1,
+            "name": "Technical Support",
+            "_info": {
+                "department_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/departments/1"
+            }
+        },
+        "vendor": {
+            "id": 19303,
+            "identifier": "ADI",
+            "name": "ADI",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19303"
+            }
+        },
+        "vendorSku": "Z4-0832004 ",
+        "taxableFlag": false,
+        "dropshipFlag": false,
+        "specialOrderFlag": false,
+        "phaseProductFlag": false,
+        "cancelledFlag": false,
+        "quantityCancelled": 0.00,
+        "customerDescription": "8-Channel Network Video Recorder with PoE Switch",
+        "productSuppliedFlag": false,
+        "project": {
+            "id": 6,
+            "name": "JM13161 Gulf Breeze",
+            "_info": {
+                "project_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//project/projects/6",
+                "billingMethod": "A",
+                "status": "Closed"
+            }
+        },
+        "calculatedPriceFlag": false,
+        "calculatedCostFlag": false,
+        "taxCode": {
+            "id": 16,
+            "name": "AVATAX",
+            "_info": {
+                "taxCode_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//finance/taxCodes/16"
+            }
+        },
+        "listPrice": 529.000000,
+        "company": {
+            "id": 19308,
+            "identifier": "JM13161",
+            "name": "Jersey Mikes 13161",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19308"
+            }
+        },
+        "productClass": "NonInventory",
+        "needToPurchaseFlag": false,
+        "minimumStockFlag": false,
+        "poApprovedFlag": false,
+        "uom": "Each",
+        "_info": {
+            "lastUpdated": "2020-06-09T17:58:24Z"
+        }
+    },
+    {
+        "id": 32,
+        "catalogItem": {
+            "id": 19,
+            "identifier": "01064-001",
+            "_info": {
+                "typeId": "4",
+                "catalog_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/catalog/19"
+            }
+        },
+        "description": "Companion Eye Mini L",
+        "sequenceNumber": 1.020000,
+        "quantity": 3.00,
+        "unitOfMeasure": {
+            "id": 1,
+            "name": "Each",
+            "_info": {
+                "uom_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/unitOfMeasures/1"
+            }
+        },
+        "price": 126.000000,
+        "cost": 97.000000,
+        "extPrice": 378.000000,
+        "extCost": 291.000000,
+        "discount": 0.000000,
+        "margin": 29.000000,
+        "agreementAmount": 0.00,
+        "billableOption": "Billable",
+        "locationId": 11,
+        "location": {
+            "id": 11,
+            "name": "Palm Beach Office",
+            "_info": {
+                "location_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/locations/11"
+            }
+        },
+        "businessUnitId": 1,
+        "businessUnit": {
+            "id": 1,
+            "name": "Technical Support",
+            "_info": {
+                "department_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/departments/1"
+            }
+        },
+        "vendor": {
+            "id": 19303,
+            "identifier": "ADI",
+            "name": "ADI",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19303"
+            }
+        },
+        "vendorSku": "Z4-01064001",
+        "taxableFlag": false,
+        "dropshipFlag": false,
+        "specialOrderFlag": false,
+        "phaseProductFlag": false,
+        "cancelledFlag": false,
+        "quantityCancelled": 0.00,
+        "customerDescription": "Indoor Full HD IR Network Camera\n\n",
+        "productSuppliedFlag": false,
+        "project": {
+            "id": 6,
+            "name": "JM13161 Gulf Breeze",
+            "_info": {
+                "project_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//project/projects/6",
+                "billingMethod": "A",
+                "status": "Closed"
+            }
+        },
+        "warehouseId": 1,
+        "warehouseIdObject": {
+            "id": 1,
+            "name": "Atlanta Warehouse",
+            "lockedFlag": false,
+            "_info": {
+                "warehouse_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/warehouses/1"
+            }
+        },
+        "warehouseBinId": 1,
+        "warehouseBinIdObject": {
+            "id": 1,
+            "name": "MAIN INVENTORY",
+            "_info": {
+                "warehouseBin_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/warehouseBins/1"
+            }
+        },
+        "calculatedPriceFlag": false,
+        "calculatedCostFlag": false,
+        "warehouse": "Atlanta Warehouse",
+        "warehouseBin": "MAIN INVENTORY",
+        "taxCode": {
+            "id": 16,
+            "name": "AVATAX",
+            "_info": {
+                "taxCode_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//finance/taxCodes/16"
+            }
+        },
+        "listPrice": 249.000000,
+        "company": {
+            "id": 19308,
+            "identifier": "JM13161",
+            "name": "Jersey Mikes 13161",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19308"
+            }
+        },
+        "productClass": "NonInventory",
+        "needToPurchaseFlag": false,
+        "minimumStockFlag": false,
+        "poApprovedFlag": false,
+        "uom": "Each",
+        "_info": {
+            "lastUpdated": "2020-06-09T17:58:24Z"
+        }
+    },
+    {
+        "id": 33,
+        "catalogItem": {
+            "id": 16,
+            "identifier": "0894-001",
+            "_info": {
+                "typeId": "3",
+                "catalog_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/catalog/16"
+            }
+        },
+        "description": "Companion Dome V",
+        "sequenceNumber": 1.030000,
+        "quantity": 3.00,
+        "unitOfMeasure": {
+            "id": 1,
+            "name": "Each",
+            "_info": {
+                "uom_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/unitOfMeasures/1"
+            }
+        },
+        "price": 179.000000,
+        "cost": 138.000000,
+        "extPrice": 537.000000,
+        "extCost": 414.000000,
+        "discount": 0.000000,
+        "margin": 41.000000,
+        "agreementAmount": 0.00,
+        "billableOption": "Billable",
+        "locationId": 11,
+        "location": {
+            "id": 11,
+            "name": "Palm Beach Office",
+            "_info": {
+                "location_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/locations/11"
+            }
+        },
+        "businessUnitId": 1,
+        "businessUnit": {
+            "id": 1,
+            "name": "Technical Support",
+            "_info": {
+                "department_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/departments/1"
+            }
+        },
+        "vendor": {
+            "id": 19303,
+            "identifier": "ADI",
+            "name": "ADI",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19303"
+            }
+        },
+        "vendorSku": "Z4-0894001",
+        "taxableFlag": false,
+        "dropshipFlag": false,
+        "specialOrderFlag": false,
+        "phaseProductFlag": false,
+        "cancelledFlag": false,
+        "quantityCancelled": 0.00,
+        "customerDescription": "Indoor Full HD Network Dome Camera",
+        "productSuppliedFlag": false,
+        "project": {
+            "id": 6,
+            "name": "JM13161 Gulf Breeze",
+            "_info": {
+                "project_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//project/projects/6",
+                "billingMethod": "A",
+                "status": "Closed"
+            }
+        },
+        "warehouseId": 1,
+        "warehouseIdObject": {
+            "id": 1,
+            "name": "Atlanta Warehouse",
+            "lockedFlag": false,
+            "_info": {
+                "warehouse_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/warehouses/1"
+            }
+        },
+        "warehouseBinId": 1,
+        "warehouseBinIdObject": {
+            "id": 1,
+            "name": "MAIN INVENTORY",
+            "_info": {
+                "warehouseBin_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/warehouseBins/1"
+            }
+        },
+        "calculatedPriceFlag": false,
+        "calculatedCostFlag": false,
+        "warehouse": "Atlanta Warehouse",
+        "warehouseBin": "MAIN INVENTORY",
+        "taxCode": {
+            "id": 16,
+            "name": "AVATAX",
+            "_info": {
+                "taxCode_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//finance/taxCodes/16"
+            }
+        },
+        "listPrice": 179.000000,
+        "company": {
+            "id": 19308,
+            "identifier": "JM13161",
+            "name": "Jersey Mikes 13161",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19308"
+            }
+        },
+        "productClass": "Inventory",
+        "needToPurchaseFlag": false,
+        "minimumStockFlag": false,
+        "poApprovedFlag": false,
+        "uom": "Each",
+        "_info": {
+            "lastUpdated": "2020-06-09T17:58:24Z"
+        }
+    },
+    {
+        "id": 34,
+        "catalogItem": {
+            "id": 34,
+            "identifier": "CCTV Monitor",
+            "_info": {
+                "typeId": "3",
+                "catalog_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/catalog/34"
+            }
+        },
+        "description": "In Store Monitor",
+        "sequenceNumber": 2.000000,
+        "quantity": 1.00,
+        "unitOfMeasure": {
+            "id": 1,
+            "name": "Each",
+            "_info": {
+                "uom_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/unitOfMeasures/1"
+            }
+        },
+        "price": 300.000000,
+        "cost": 148.980000,
+        "extPrice": 300.000000,
+        "extCost": 148.980000,
+        "discount": 0.000000,
+        "margin": 151.020000,
+        "agreementAmount": 0.00,
+        "billableOption": "Billable",
+        "locationId": 11,
+        "location": {
+            "id": 11,
+            "name": "Palm Beach Office",
+            "_info": {
+                "location_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/locations/11"
+            }
+        },
+        "businessUnitId": 1,
+        "businessUnit": {
+            "id": 1,
+            "name": "Technical Support",
+            "_info": {
+                "department_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/departments/1"
+            }
+        },
+        "vendor": {
+            "id": 19449,
+            "identifier": "Amazon",
+            "name": "Amazon",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19449"
+            }
+        },
+        "taxableFlag": false,
+        "dropshipFlag": false,
+        "specialOrderFlag": false,
+        "phaseProductFlag": false,
+        "cancelledFlag": false,
+        "quantityCancelled": 0.00,
+        "customerDescription": "Includes 32” LCD monitor with wall mount, HDMI cable, for display of cameras on the TV for team members to monitor customer entry while prepping.",
+        "productSuppliedFlag": false,
+        "project": {
+            "id": 6,
+            "name": "JM13161 Gulf Breeze",
+            "_info": {
+                "project_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//project/projects/6",
+                "billingMethod": "A",
+                "status": "Closed"
+            }
+        },
+        "calculatedPriceFlag": false,
+        "calculatedCostFlag": false,
+        "taxCode": {
+            "id": 16,
+            "name": "AVATAX",
+            "_info": {
+                "taxCode_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//finance/taxCodes/16"
+            }
+        },
+        "listPrice": 300.000000,
+        "company": {
+            "id": 19308,
+            "identifier": "JM13161",
+            "name": "Jersey Mikes 13161",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19308"
+            }
+        },
+        "productClass": "Bundle",
+        "needToPurchaseFlag": false,
+        "minimumStockFlag": false,
+        "calculatedPrice": 209.00000000,
+        "calculatedCost": 143.82000000,
+        "poApprovedFlag": false,
+        "uom": "Each",
+        "_info": {
+            "lastUpdated": "2020-06-09T17:58:24Z"
+        }
+    },
+    {
+        "id": 35,
+        "catalogItem": {
+            "id": 52,
+            "identifier": "X328BV-SR",
+            "_info": {
+                "typeId": "3",
+                "catalog_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/catalog/52"
+            }
+        },
+        "description": "32-Inch 720p LED TV",
+        "sequenceNumber": 2.010000,
+        "quantity": 1.00,
+        "unitOfMeasure": {
+            "id": 1,
+            "name": "Each",
+            "_info": {
+                "uom_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/unitOfMeasures/1"
+            }
+        },
+        "price": 179.000000,
+        "cost": 123.830000,
+        "extPrice": 179.000000,
+        "extCost": 123.830000,
+        "discount": 0.000000,
+        "margin": 55.170000,
+        "agreementAmount": 0.00,
+        "billableOption": "Billable",
+        "locationId": 11,
+        "location": {
+            "id": 11,
+            "name": "Palm Beach Office",
+            "_info": {
+                "location_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/locations/11"
+            }
+        },
+        "businessUnitId": 1,
+        "businessUnit": {
+            "id": 1,
+            "name": "Technical Support",
+            "_info": {
+                "department_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/departments/1"
+            }
+        },
+        "vendor": {
+            "id": 19449,
+            "identifier": "Amazon",
+            "name": "Amazon",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19449"
+            }
+        },
+        "vendorSku": "B06XNMQQCP",
+        "taxableFlag": false,
+        "dropshipFlag": false,
+        "specialOrderFlag": false,
+        "phaseProductFlag": false,
+        "cancelledFlag": false,
+        "quantityCancelled": 0.00,
+        "customerDescription": "32-Inch 720p LED TV",
+        "productSuppliedFlag": false,
+        "project": {
+            "id": 6,
+            "name": "JM13161 Gulf Breeze",
+            "_info": {
+                "project_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//project/projects/6",
+                "billingMethod": "A",
+                "status": "Closed"
+            }
+        },
+        "warehouseId": 1,
+        "warehouseIdObject": {
+            "id": 1,
+            "name": "Atlanta Warehouse",
+            "lockedFlag": false,
+            "_info": {
+                "warehouse_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/warehouses/1"
+            }
+        },
+        "warehouseBinId": 1,
+        "warehouseBinIdObject": {
+            "id": 1,
+            "name": "MAIN INVENTORY",
+            "_info": {
+                "warehouseBin_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/warehouseBins/1"
+            }
+        },
+        "calculatedPriceFlag": false,
+        "calculatedCostFlag": false,
+        "warehouse": "Atlanta Warehouse",
+        "warehouseBin": "MAIN INVENTORY",
+        "taxCode": {
+            "id": 16,
+            "name": "AVATAX",
+            "_info": {
+                "taxCode_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//finance/taxCodes/16"
+            }
+        },
+        "listPrice": 179.000000,
+        "company": {
+            "id": 19308,
+            "identifier": "JM13161",
+            "name": "Jersey Mikes 13161",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19308"
+            }
+        },
+        "productClass": "Inventory",
+        "needToPurchaseFlag": false,
+        "minimumStockFlag": false,
+        "poApprovedFlag": false,
+        "uom": "Each",
+        "_info": {
+            "lastUpdated": "2020-06-09T17:58:24Z"
+        }
+    },
+    {
+        "id": 36,
+        "catalogItem": {
+            "id": 53,
+            "identifier": "MD2268-MK",
+            "_info": {
+                "typeId": "3",
+                "catalog_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/catalog/53"
+            }
+        },
+        "description": "TV Wall Mount Tilting Bracket",
+        "sequenceNumber": 2.020000,
+        "quantity": 1.00,
+        "unitOfMeasure": {
+            "id": 1,
+            "name": "Each",
+            "_info": {
+                "uom_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/unitOfMeasures/1"
+            }
+        },
+        "price": 30.000000,
+        "cost": 19.990000,
+        "extPrice": 30.000000,
+        "extCost": 19.990000,
+        "discount": 0.000000,
+        "margin": 10.010000,
+        "agreementAmount": 0.00,
+        "billableOption": "Billable",
+        "locationId": 11,
+        "location": {
+            "id": 11,
+            "name": "Palm Beach Office",
+            "_info": {
+                "location_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/locations/11"
+            }
+        },
+        "businessUnitId": 1,
+        "businessUnit": {
+            "id": 1,
+            "name": "Technical Support",
+            "_info": {
+                "department_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/departments/1"
+            }
+        },
+        "vendor": {
+            "id": 19449,
+            "identifier": "Amazon",
+            "name": "Amazon",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19449"
+            }
+        },
+        "vendorSku": "B00NKZ5R28",
+        "taxableFlag": false,
+        "dropshipFlag": false,
+        "specialOrderFlag": false,
+        "phaseProductFlag": false,
+        "cancelledFlag": false,
+        "quantityCancelled": 0.00,
+        "customerDescription": "TV Wall Mount Tilting Bracket",
+        "productSuppliedFlag": false,
+        "project": {
+            "id": 6,
+            "name": "JM13161 Gulf Breeze",
+            "_info": {
+                "project_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//project/projects/6",
+                "billingMethod": "A",
+                "status": "Closed"
+            }
+        },
+        "warehouseId": 1,
+        "warehouseIdObject": {
+            "id": 1,
+            "name": "Atlanta Warehouse",
+            "lockedFlag": false,
+            "_info": {
+                "warehouse_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/warehouses/1"
+            }
+        },
+        "warehouseBinId": 1,
+        "warehouseBinIdObject": {
+            "id": 1,
+            "name": "MAIN INVENTORY",
+            "_info": {
+                "warehouseBin_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/warehouseBins/1"
+            }
+        },
+        "calculatedPriceFlag": false,
+        "calculatedCostFlag": false,
+        "warehouse": "Atlanta Warehouse",
+        "warehouseBin": "MAIN INVENTORY",
+        "taxCode": {
+            "id": 16,
+            "name": "AVATAX",
+            "_info": {
+                "taxCode_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//finance/taxCodes/16"
+            }
+        },
+        "listPrice": 30.000000,
+        "company": {
+            "id": 19308,
+            "identifier": "JM13161",
+            "name": "Jersey Mikes 13161",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19308"
+            }
+        },
+        "productClass": "Inventory",
+        "needToPurchaseFlag": false,
+        "minimumStockFlag": false,
+        "poApprovedFlag": false,
+        "uom": "Each",
+        "_info": {
+            "lastUpdated": "2020-06-09T17:58:24Z"
+        }
+    },
+    {
+        "id": 37,
+        "catalogItem": {
+            "id": 31,
+            "identifier": "GC2E-ALARM.COM (STOCK)",
+            "_info": {
+                "typeId": "3",
+                "catalog_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/catalog/31"
+            }
+        },
+        "description": "Standard Alarm Package",
+        "sequenceNumber": 3.000000,
+        "quantity": 1.00,
+        "unitOfMeasure": {
+            "id": 1,
+            "name": "Each",
+            "_info": {
+                "uom_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/unitOfMeasures/1"
+            }
+        },
+        "price": 425.000000,
+        "cost": 244.000000,
+        "extPrice": 425.000000,
+        "extCost": 244.000000,
+        "discount": 0.000000,
+        "margin": 181.000000,
+        "agreementAmount": 0.00,
+        "billableOption": "Billable",
+        "locationId": 11,
+        "location": {
+            "id": 11,
+            "name": "Palm Beach Office",
+            "_info": {
+                "location_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/locations/11"
+            }
+        },
+        "businessUnitId": 1,
+        "businessUnit": {
+            "id": 1,
+            "name": "Technical Support",
+            "_info": {
+                "department_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/departments/1"
+            }
+        },
+        "vendor": {
+            "id": 19450,
+            "identifier": "link",
+            "name": "SimpliSafe",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19450"
+            }
+        },
+        "taxableFlag": false,
+        "dropshipFlag": false,
+        "specialOrderFlag": false,
+        "phaseProductFlag": false,
+        "cancelledFlag": false,
+        "quantityCancelled": 0.00,
+        "customerDescription": "Wireless 4G alarm includes: 1 keypad, 1 base station, 1 motion sensor, 2 door sensors.",
+        "productSuppliedFlag": false,
+        "project": {
+            "id": 6,
+            "name": "JM13161 Gulf Breeze",
+            "_info": {
+                "project_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//project/projects/6",
+                "billingMethod": "A",
+                "status": "Closed"
+            }
+        },
+        "calculatedPriceFlag": false,
+        "calculatedCostFlag": false,
+        "taxCode": {
+            "id": 16,
+            "name": "AVATAX",
+            "_info": {
+                "taxCode_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//finance/taxCodes/16"
+            }
+        },
+        "listPrice": 399.000000,
+        "company": {
+            "id": 19308,
+            "identifier": "JM13161",
+            "name": "Jersey Mikes 13161",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19308"
+            }
+        },
+        "productClass": "Bundle",
+        "needToPurchaseFlag": false,
+        "minimumStockFlag": false,
+        "calculatedPrice": 414.00000000,
+        "calculatedCost": 274.93000000,
+        "poApprovedFlag": false,
+        "uom": "Each",
+        "_info": {
+            "lastUpdated": "2020-06-09T17:58:24Z"
+        }
+    },
+    {
+        "id": 38,
+        "catalogItem": {
+            "id": 57,
+            "identifier": "SimpliSafe Keypad",
+            "_info": {
+                "typeId": "3",
+                "catalog_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/catalog/57"
+            }
+        },
+        "description": "Wireless Alarm Keypad",
+        "sequenceNumber": 3.010000,
+        "quantity": 1.00,
+        "unitOfMeasure": {
+            "id": 1,
+            "name": "Each",
+            "_info": {
+                "uom_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/unitOfMeasures/1"
+            }
+        },
+        "price": 106.000000,
+        "cost": 69.990000,
+        "extPrice": 106.000000,
+        "extCost": 69.990000,
+        "discount": 0.000000,
+        "margin": 36.010000,
+        "agreementAmount": 0.00,
+        "billableOption": "Billable",
+        "locationId": 11,
+        "location": {
+            "id": 11,
+            "name": "Palm Beach Office",
+            "_info": {
+                "location_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/locations/11"
+            }
+        },
+        "businessUnitId": 1,
+        "businessUnit": {
+            "id": 1,
+            "name": "Technical Support",
+            "_info": {
+                "department_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/departments/1"
+            }
+        },
+        "vendor": {
+            "id": 19450,
+            "identifier": "link",
+            "name": "SimpliSafe",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19450"
+            }
+        },
+        "taxableFlag": false,
+        "dropshipFlag": false,
+        "specialOrderFlag": false,
+        "phaseProductFlag": false,
+        "cancelledFlag": false,
+        "quantityCancelled": 0.00,
+        "customerDescription": "Wireless Alarm Keypad",
+        "productSuppliedFlag": false,
+        "project": {
+            "id": 6,
+            "name": "JM13161 Gulf Breeze",
+            "_info": {
+                "project_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//project/projects/6",
+                "billingMethod": "A",
+                "status": "Closed"
+            }
+        },
+        "warehouseId": 1,
+        "warehouseIdObject": {
+            "id": 1,
+            "name": "Atlanta Warehouse",
+            "lockedFlag": false,
+            "_info": {
+                "warehouse_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/warehouses/1"
+            }
+        },
+        "warehouseBinId": 1,
+        "warehouseBinIdObject": {
+            "id": 1,
+            "name": "MAIN INVENTORY",
+            "_info": {
+                "warehouseBin_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/warehouseBins/1"
+            }
+        },
+        "calculatedPriceFlag": false,
+        "calculatedCostFlag": false,
+        "warehouse": "Atlanta Warehouse",
+        "warehouseBin": "MAIN INVENTORY",
+        "taxCode": {
+            "id": 16,
+            "name": "AVATAX",
+            "_info": {
+                "taxCode_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//finance/taxCodes/16"
+            }
+        },
+        "listPrice": 106.000000,
+        "company": {
+            "id": 19308,
+            "identifier": "JM13161",
+            "name": "Jersey Mikes 13161",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19308"
+            }
+        },
+        "productClass": "NonInventory",
+        "needToPurchaseFlag": false,
+        "minimumStockFlag": false,
+        "poApprovedFlag": false,
+        "uom": "Each",
+        "_info": {
+            "lastUpdated": "2020-06-09T17:58:24Z"
+        }
+    },
+    {
+        "id": 39,
+        "catalogItem": {
+            "id": 58,
+            "identifier": "SimpliSafe Base Station",
+            "_info": {
+                "typeId": "3",
+                "catalog_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/catalog/58"
+            }
+        },
+        "description": "Alarm Base Station",
+        "sequenceNumber": 3.020000,
+        "quantity": 1.00,
+        "unitOfMeasure": {
+            "id": 1,
+            "name": "Each",
+            "_info": {
+                "uom_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/unitOfMeasures/1"
+            }
+        },
+        "price": 173.000000,
+        "cost": 114.990000,
+        "extPrice": 173.000000,
+        "extCost": 114.990000,
+        "discount": 0.000000,
+        "margin": 58.010000,
+        "agreementAmount": 0.00,
+        "billableOption": "Billable",
+        "locationId": 11,
+        "location": {
+            "id": 11,
+            "name": "Palm Beach Office",
+            "_info": {
+                "location_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/locations/11"
+            }
+        },
+        "businessUnitId": 1,
+        "businessUnit": {
+            "id": 1,
+            "name": "Technical Support",
+            "_info": {
+                "department_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/departments/1"
+            }
+        },
+        "vendor": {
+            "id": 19450,
+            "identifier": "link",
+            "name": "SimpliSafe",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19450"
+            }
+        },
+        "taxableFlag": false,
+        "dropshipFlag": false,
+        "specialOrderFlag": false,
+        "phaseProductFlag": false,
+        "cancelledFlag": false,
+        "quantityCancelled": 0.00,
+        "customerDescription": "Alarm Base Station",
+        "productSuppliedFlag": false,
+        "project": {
+            "id": 6,
+            "name": "JM13161 Gulf Breeze",
+            "_info": {
+                "project_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//project/projects/6",
+                "billingMethod": "A",
+                "status": "Closed"
+            }
+        },
+        "warehouseId": 1,
+        "warehouseIdObject": {
+            "id": 1,
+            "name": "Atlanta Warehouse",
+            "lockedFlag": false,
+            "_info": {
+                "warehouse_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/warehouses/1"
+            }
+        },
+        "warehouseBinId": 1,
+        "warehouseBinIdObject": {
+            "id": 1,
+            "name": "MAIN INVENTORY",
+            "_info": {
+                "warehouseBin_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/warehouseBins/1"
+            }
+        },
+        "calculatedPriceFlag": false,
+        "calculatedCostFlag": false,
+        "warehouse": "Atlanta Warehouse",
+        "warehouseBin": "MAIN INVENTORY",
+        "taxCode": {
+            "id": 16,
+            "name": "AVATAX",
+            "_info": {
+                "taxCode_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//finance/taxCodes/16"
+            }
+        },
+        "listPrice": 173.000000,
+        "company": {
+            "id": 19308,
+            "identifier": "JM13161",
+            "name": "Jersey Mikes 13161",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19308"
+            }
+        },
+        "productClass": "NonInventory",
+        "needToPurchaseFlag": false,
+        "minimumStockFlag": false,
+        "poApprovedFlag": false,
+        "uom": "Each",
+        "_info": {
+            "lastUpdated": "2020-06-09T17:58:24Z"
+        }
+    },
+    {
+        "id": 40,
+        "catalogItem": {
+            "id": 60,
+            "identifier": "SimpliSafe Motion Sensor",
+            "_info": {
+                "typeId": "3",
+                "catalog_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/catalog/60"
+            }
+        },
+        "description": "Alarm Motion Sensor",
+        "sequenceNumber": 3.030000,
+        "quantity": 1.00,
+        "unitOfMeasure": {
+            "id": 1,
+            "name": "Each",
+            "_info": {
+                "uom_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/unitOfMeasures/1"
+            }
+        },
+        "price": 45.000000,
+        "cost": 29.990000,
+        "extPrice": 45.000000,
+        "extCost": 29.990000,
+        "discount": 0.000000,
+        "margin": 15.010000,
+        "agreementAmount": 0.00,
+        "billableOption": "Billable",
+        "locationId": 11,
+        "location": {
+            "id": 11,
+            "name": "Palm Beach Office",
+            "_info": {
+                "location_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/locations/11"
+            }
+        },
+        "businessUnitId": 1,
+        "businessUnit": {
+            "id": 1,
+            "name": "Technical Support",
+            "_info": {
+                "department_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/departments/1"
+            }
+        },
+        "vendor": {
+            "id": 19450,
+            "identifier": "link",
+            "name": "SimpliSafe",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19450"
+            }
+        },
+        "taxableFlag": false,
+        "dropshipFlag": false,
+        "specialOrderFlag": false,
+        "phaseProductFlag": false,
+        "cancelledFlag": false,
+        "quantityCancelled": 0.00,
+        "customerDescription": "Alarm Motion Sensor",
+        "productSuppliedFlag": false,
+        "project": {
+            "id": 6,
+            "name": "JM13161 Gulf Breeze",
+            "_info": {
+                "project_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//project/projects/6",
+                "billingMethod": "A",
+                "status": "Closed"
+            }
+        },
+        "warehouseId": 1,
+        "warehouseIdObject": {
+            "id": 1,
+            "name": "Atlanta Warehouse",
+            "lockedFlag": false,
+            "_info": {
+                "warehouse_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/warehouses/1"
+            }
+        },
+        "warehouseBinId": 1,
+        "warehouseBinIdObject": {
+            "id": 1,
+            "name": "MAIN INVENTORY",
+            "_info": {
+                "warehouseBin_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/warehouseBins/1"
+            }
+        },
+        "calculatedPriceFlag": false,
+        "calculatedCostFlag": false,
+        "warehouse": "Atlanta Warehouse",
+        "warehouseBin": "MAIN INVENTORY",
+        "taxCode": {
+            "id": 16,
+            "name": "AVATAX",
+            "_info": {
+                "taxCode_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//finance/taxCodes/16"
+            }
+        },
+        "listPrice": 45.000000,
+        "company": {
+            "id": 19308,
+            "identifier": "JM13161",
+            "name": "Jersey Mikes 13161",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19308"
+            }
+        },
+        "productClass": "NonInventory",
+        "needToPurchaseFlag": false,
+        "minimumStockFlag": false,
+        "poApprovedFlag": false,
+        "uom": "Each",
+        "_info": {
+            "lastUpdated": "2020-06-09T17:58:24Z"
+        }
+    },
+    {
+        "id": 41,
+        "catalogItem": {
+            "id": 61,
+            "identifier": "SimpliSafe Entry Sensor",
+            "_info": {
+                "typeId": "3",
+                "catalog_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/catalog/61"
+            }
+        },
+        "description": "Alarm Entry Sensor",
+        "sequenceNumber": 3.040000,
+        "quantity": 2.00,
+        "unitOfMeasure": {
+            "id": 1,
+            "name": "Each",
+            "_info": {
+                "uom_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/unitOfMeasures/1"
+            }
+        },
+        "price": 45.000000,
+        "cost": 29.980000,
+        "extPrice": 90.000000,
+        "extCost": 59.960000,
+        "discount": 0.000000,
+        "margin": 15.020000,
+        "agreementAmount": 0.00,
+        "billableOption": "Billable",
+        "locationId": 11,
+        "location": {
+            "id": 11,
+            "name": "Palm Beach Office",
+            "_info": {
+                "location_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/locations/11"
+            }
+        },
+        "businessUnitId": 1,
+        "businessUnit": {
+            "id": 1,
+            "name": "Technical Support",
+            "_info": {
+                "department_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/departments/1"
+            }
+        },
+        "vendor": {
+            "id": 19450,
+            "identifier": "link",
+            "name": "SimpliSafe",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19450"
+            }
+        },
+        "taxableFlag": false,
+        "dropshipFlag": false,
+        "specialOrderFlag": false,
+        "phaseProductFlag": false,
+        "cancelledFlag": false,
+        "quantityCancelled": 0.00,
+        "customerDescription": "Alarm Entry Sensor",
+        "productSuppliedFlag": false,
+        "project": {
+            "id": 6,
+            "name": "JM13161 Gulf Breeze",
+            "_info": {
+                "project_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//project/projects/6",
+                "billingMethod": "A",
+                "status": "Closed"
+            }
+        },
+        "warehouseId": 1,
+        "warehouseIdObject": {
+            "id": 1,
+            "name": "Atlanta Warehouse",
+            "lockedFlag": false,
+            "_info": {
+                "warehouse_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/warehouses/1"
+            }
+        },
+        "warehouseBinId": 1,
+        "warehouseBinIdObject": {
+            "id": 1,
+            "name": "MAIN INVENTORY",
+            "_info": {
+                "warehouseBin_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/warehouseBins/1"
+            }
+        },
+        "calculatedPriceFlag": false,
+        "calculatedCostFlag": false,
+        "warehouse": "Atlanta Warehouse",
+        "warehouseBin": "MAIN INVENTORY",
+        "taxCode": {
+            "id": 16,
+            "name": "AVATAX",
+            "_info": {
+                "taxCode_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//finance/taxCodes/16"
+            }
+        },
+        "listPrice": 45.000000,
+        "company": {
+            "id": 19308,
+            "identifier": "JM13161",
+            "name": "Jersey Mikes 13161",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19308"
+            }
+        },
+        "productClass": "NonInventory",
+        "needToPurchaseFlag": false,
+        "minimumStockFlag": false,
+        "poApprovedFlag": false,
+        "uom": "Each",
+        "_info": {
+            "lastUpdated": "2020-06-09T17:58:24Z"
+        }
+    },
+    {
+        "id": 44,
+        "catalogItem": {
+            "id": 35,
+            "identifier": "Basic Network Package",
+            "_info": {
+                "typeId": "3",
+                "catalog_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/catalog/35"
+            }
+        },
+        "description": "Network, Phones, Rack",
+        "sequenceNumber": 4.000000,
+        "quantity": 1.00,
+        "unitOfMeasure": {
+            "id": 1,
+            "name": "Each",
+            "_info": {
+                "uom_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/unitOfMeasures/1"
+            }
+        },
+        "price": 1375.000000,
+        "cost": 667.740000,
+        "extPrice": 1375.000000,
+        "extCost": 667.740000,
+        "discount": 0.000000,
+        "margin": 707.260000,
+        "agreementAmount": 0.00,
+        "billableOption": "Billable",
+        "locationId": 11,
+        "location": {
+            "id": 11,
+            "name": "Palm Beach Office",
+            "_info": {
+                "location_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/locations/11"
+            }
+        },
+        "businessUnitId": 1,
+        "businessUnit": {
+            "id": 1,
+            "name": "Technical Support",
+            "_info": {
+                "department_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/departments/1"
+            }
+        },
+        "taxableFlag": false,
+        "dropshipFlag": false,
+        "specialOrderFlag": false,
+        "phaseProductFlag": false,
+        "cancelledFlag": false,
+        "quantityCancelled": 0.00,
+        "customerDescription": "Includes 12U swinging network rack with glass security door, shelves, UPS, power toggle switch, Cloud managed Jersey Mikes WIFI, 1 VoIP base station, 2 cordless phones with extensions, mini PC for remote access, support and troubleshooting.",
+        "productSuppliedFlag": false,
+        "project": {
+            "id": 6,
+            "name": "JM13161 Gulf Breeze",
+            "_info": {
+                "project_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//project/projects/6",
+                "billingMethod": "A",
+                "status": "Closed"
+            }
+        },
+        "calculatedPriceFlag": false,
+        "calculatedCostFlag": true,
+        "listPrice": 0.000000,
+        "company": {
+            "id": 19308,
+            "identifier": "JM13161",
+            "name": "Jersey Mikes 13161",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19308"
+            }
+        },
+        "productClass": "Bundle",
+        "needToPurchaseFlag": false,
+        "minimumStockFlag": false,
+        "calculatedPrice": 1013.99000000,
+        "calculatedCost": 667.74000000,
+        "poApprovedFlag": false,
+        "uom": "Each",
+        "_info": {
+            "lastUpdated": "2020-06-09T17:58:25Z"
+        }
+    },
+    {
+        "id": 45,
+        "catalogItem": {
+            "id": 47,
+            "identifier": "00301251",
+            "_info": {
+                "typeId": "3",
+                "catalog_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/catalog/47"
+            }
+        },
+        "description": "12U Wall Mount Rack Enclosure",
+        "sequenceNumber": 4.010000,
+        "quantity": 1.00,
+        "unitOfMeasure": {
+            "id": 1,
+            "name": "Each",
+            "_info": {
+                "uom_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/unitOfMeasures/1"
+            }
+        },
+        "price": 392.000000,
+        "cost": 255.830000,
+        "extPrice": 392.000000,
+        "extCost": 255.830000,
+        "discount": 0.000000,
+        "margin": 136.170000,
+        "agreementAmount": 0.00,
+        "billableOption": "Billable",
+        "locationId": 11,
+        "location": {
+            "id": 11,
+            "name": "Palm Beach Office",
+            "_info": {
+                "location_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/locations/11"
+            }
+        },
+        "businessUnitId": 1,
+        "businessUnit": {
+            "id": 1,
+            "name": "Technical Support",
+            "_info": {
+                "department_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/departments/1"
+            }
+        },
+        "vendor": {
+            "id": 19449,
+            "identifier": "Amazon",
+            "name": "Amazon",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19449"
+            }
+        },
+        "vendorSku": "B001TGUYI2",
+        "taxableFlag": false,
+        "dropshipFlag": false,
+        "specialOrderFlag": false,
+        "phaseProductFlag": false,
+        "cancelledFlag": false,
+        "quantityCancelled": 0.00,
+        "customerDescription": "Wall Mount Rack Enclosure Server Cabinet",
+        "productSuppliedFlag": false,
+        "project": {
+            "id": 6,
+            "name": "JM13161 Gulf Breeze",
+            "_info": {
+                "project_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//project/projects/6",
+                "billingMethod": "A",
+                "status": "Closed"
+            }
+        },
+        "calculatedPriceFlag": false,
+        "calculatedCostFlag": false,
+        "taxCode": {
+            "id": 16,
+            "name": "AVATAX",
+            "_info": {
+                "taxCode_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//finance/taxCodes/16"
+            }
+        },
+        "listPrice": 389.000000,
+        "company": {
+            "id": 19308,
+            "identifier": "JM13161",
+            "name": "Jersey Mikes 13161",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19308"
+            }
+        },
+        "productClass": "Inventory",
+        "needToPurchaseFlag": false,
+        "minimumStockFlag": false,
+        "poApprovedFlag": false,
+        "uom": "Each",
+        "_info": {
+            "lastUpdated": "2020-06-09T17:58:25Z"
+        }
+    },
+    {
+        "id": 46,
+        "catalogItem": {
+            "id": 50,
+            "identifier": "00301140-1",
+            "_info": {
+                "typeId": "3",
+                "catalog_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/catalog/50"
+            }
+        },
+        "description": "Vented Universal Rack Tray Shelf",
+        "sequenceNumber": 4.020000,
+        "quantity": 1.00,
+        "unitOfMeasure": {
+            "id": 1,
+            "name": "Each",
+            "_info": {
+                "uom_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/unitOfMeasures/1"
+            }
+        },
+        "price": 38.000000,
+        "cost": 24.990000,
+        "extPrice": 38.000000,
+        "extCost": 24.990000,
+        "discount": 0.000000,
+        "margin": 13.010000,
+        "agreementAmount": 0.00,
+        "billableOption": "Billable",
+        "locationId": 11,
+        "location": {
+            "id": 11,
+            "name": "Palm Beach Office",
+            "_info": {
+                "location_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/locations/11"
+            }
+        },
+        "businessUnitId": 1,
+        "businessUnit": {
+            "id": 1,
+            "name": "Technical Support",
+            "_info": {
+                "department_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/departments/1"
+            }
+        },
+        "vendor": {
+            "id": 19449,
+            "identifier": "Amazon",
+            "name": "Amazon",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19449"
+            }
+        },
+        "vendorSku": "B0007OGTGS",
+        "taxableFlag": false,
+        "dropshipFlag": false,
+        "specialOrderFlag": false,
+        "phaseProductFlag": false,
+        "cancelledFlag": false,
+        "quantityCancelled": 0.00,
+        "customerDescription": "Vented Universal Rack Tray Shelf",
+        "productSuppliedFlag": false,
+        "project": {
+            "id": 6,
+            "name": "JM13161 Gulf Breeze",
+            "_info": {
+                "project_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//project/projects/6",
+                "billingMethod": "A",
+                "status": "Closed"
+            }
+        },
+        "calculatedPriceFlag": false,
+        "calculatedCostFlag": false,
+        "taxCode": {
+            "id": 16,
+            "name": "AVATAX",
+            "_info": {
+                "taxCode_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//finance/taxCodes/16"
+            }
+        },
+        "listPrice": 53.000000,
+        "company": {
+            "id": 19308,
+            "identifier": "JM13161",
+            "name": "Jersey Mikes 13161",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19308"
+            }
+        },
+        "productClass": "Inventory",
+        "needToPurchaseFlag": false,
+        "minimumStockFlag": false,
+        "poApprovedFlag": false,
+        "uom": "Each",
+        "_info": {
+            "lastUpdated": "2020-06-09T17:58:25Z"
+        }
+    },
+    {
+        "id": 47,
+        "catalogItem": {
+            "id": 51,
+            "identifier": "CP425SLG",
+            "_info": {
+                "typeId": "3",
+                "catalog_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/catalog/51"
+            }
+        },
+        "description": "UPS System 350VA",
+        "sequenceNumber": 4.030000,
+        "quantity": 1.00,
+        "unitOfMeasure": {
+            "id": 1,
+            "name": "Each",
+            "_info": {
+                "uom_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/unitOfMeasures/1"
+            }
+        },
+        "price": 60.000000,
+        "cost": 39.950000,
+        "extPrice": 60.000000,
+        "extCost": 39.950000,
+        "discount": 0.000000,
+        "margin": 20.050000,
+        "agreementAmount": 0.00,
+        "billableOption": "Billable",
+        "locationId": 11,
+        "location": {
+            "id": 11,
+            "name": "Palm Beach Office",
+            "_info": {
+                "location_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/locations/11"
+            }
+        },
+        "businessUnitId": 1,
+        "businessUnit": {
+            "id": 1,
+            "name": "Technical Support",
+            "_info": {
+                "department_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/departments/1"
+            }
+        },
+        "vendor": {
+            "id": 19449,
+            "identifier": "Amazon",
+            "name": "Amazon",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19449"
+            }
+        },
+        "vendorSku": "B004OR0V2C",
+        "taxableFlag": false,
+        "dropshipFlag": false,
+        "specialOrderFlag": false,
+        "phaseProductFlag": false,
+        "cancelledFlag": false,
+        "quantityCancelled": 0.00,
+        "customerDescription": "Standby UPS System, 350VA/255W, 6 Outlets, Compact",
+        "productSuppliedFlag": false,
+        "project": {
+            "id": 6,
+            "name": "JM13161 Gulf Breeze",
+            "_info": {
+                "project_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//project/projects/6",
+                "billingMethod": "A",
+                "status": "Closed"
+            }
+        },
+        "calculatedPriceFlag": false,
+        "calculatedCostFlag": false,
+        "taxCode": {
+            "id": 16,
+            "name": "AVATAX",
+            "_info": {
+                "taxCode_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//finance/taxCodes/16"
+            }
+        },
+        "listPrice": 96.360000,
+        "company": {
+            "id": 19308,
+            "identifier": "JM13161",
+            "name": "Jersey Mikes 13161",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19308"
+            }
+        },
+        "productClass": "Inventory",
+        "needToPurchaseFlag": false,
+        "minimumStockFlag": false,
+        "poApprovedFlag": false,
+        "uom": "Each",
+        "_info": {
+            "lastUpdated": "2020-06-09T17:58:25Z"
+        }
+    },
+    {
+        "id": 48,
+        "catalogItem": {
+            "id": 49,
+            "identifier": "PC-100A",
+            "_info": {
+                "typeId": "3",
+                "catalog_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/catalog/49"
+            }
+        },
+        "description": "AC Power Strip",
+        "sequenceNumber": 4.040000,
+        "quantity": 1.00,
+        "unitOfMeasure": {
+            "id": 1,
+            "name": "Each",
+            "_info": {
+                "uom_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/unitOfMeasures/1"
+            }
+        },
+        "price": 45.000000,
+        "cost": 29.990000,
+        "extPrice": 45.000000,
+        "extCost": 29.990000,
+        "discount": 0.000000,
+        "margin": 15.010000,
+        "agreementAmount": 0.00,
+        "billableOption": "Billable",
+        "locationId": 11,
+        "location": {
+            "id": 11,
+            "name": "Palm Beach Office",
+            "_info": {
+                "location_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/locations/11"
+            }
+        },
+        "businessUnitId": 1,
+        "businessUnit": {
+            "id": 1,
+            "name": "Technical Support",
+            "_info": {
+                "department_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/departments/1"
+            }
+        },
+        "vendor": {
+            "id": 19449,
+            "identifier": "Amazon",
+            "name": "Amazon",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19449"
+            }
+        },
+        "vendorSku": "B00KFZ98YO",
+        "taxableFlag": false,
+        "dropshipFlag": false,
+        "specialOrderFlag": false,
+        "phaseProductFlag": false,
+        "cancelledFlag": false,
+        "quantityCancelled": 0.00,
+        "customerDescription": "AC Power Strip",
+        "productSuppliedFlag": false,
+        "project": {
+            "id": 6,
+            "name": "JM13161 Gulf Breeze",
+            "_info": {
+                "project_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//project/projects/6",
+                "billingMethod": "A",
+                "status": "Closed"
+            }
+        },
+        "calculatedPriceFlag": false,
+        "calculatedCostFlag": false,
+        "taxCode": {
+            "id": 16,
+            "name": "AVATAX",
+            "_info": {
+                "taxCode_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//finance/taxCodes/16"
+            }
+        },
+        "listPrice": 90.000000,
+        "company": {
+            "id": 19308,
+            "identifier": "JM13161",
+            "name": "Jersey Mikes 13161",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19308"
+            }
+        },
+        "productClass": "Inventory",
+        "needToPurchaseFlag": false,
+        "minimumStockFlag": false,
+        "poApprovedFlag": false,
+        "uom": "Each",
+        "_info": {
+            "lastUpdated": "2020-06-09T17:58:25Z"
+        }
+    },
+    {
+        "id": 49,
+        "catalogItem": {
+            "id": 48,
+            "identifier": "OM2P-HS",
+            "_info": {
+                "typeId": "3",
+                "catalog_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/catalog/48"
+            }
+        },
+        "description": "High Power Access Point Router",
+        "sequenceNumber": 4.050000,
+        "quantity": 1.00,
+        "unitOfMeasure": {
+            "id": 1,
+            "name": "Each",
+            "_info": {
+                "uom_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/unitOfMeasures/1"
+            }
+        },
+        "price": 140.000000,
+        "cost": 93.000000,
+        "extPrice": 140.000000,
+        "extCost": 93.000000,
+        "discount": 0.000000,
+        "margin": 47.000000,
+        "agreementAmount": 0.00,
+        "billableOption": "Billable",
+        "locationId": 11,
+        "location": {
+            "id": 11,
+            "name": "Palm Beach Office",
+            "_info": {
+                "location_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/locations/11"
+            }
+        },
+        "businessUnitId": 1,
+        "businessUnit": {
+            "id": 1,
+            "name": "Technical Support",
+            "_info": {
+                "department_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//system/departments/1"
+            }
+        },
+        "vendor": {
+            "id": 19449,
+            "identifier": "Amazon",
+            "name": "Amazon",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19449"
+            }
+        },
+        "vendorSku": "B00K5VLJ36",
+        "taxableFlag": false,
+        "dropshipFlag": false,
+        "specialOrderFlag": false,
+        "phaseProductFlag": false,
+        "cancelledFlag": false,
+        "quantityCancelled": 0.00,
+        "customerDescription": "High Power Access Point Router Wifi Antenna",
+        "productSuppliedFlag": false,
+        "project": {
+            "id": 6,
+            "name": "JM13161 Gulf Breeze",
+            "_info": {
+                "project_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//project/projects/6",
+                "billingMethod": "A",
+                "status": "Closed"
+            }
+        },
+        "warehouseId": 1,
+        "warehouseIdObject": {
+            "id": 1,
+            "name": "Atlanta Warehouse",
+            "lockedFlag": false,
+            "_info": {
+                "warehouse_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/warehouses/1"
+            }
+        },
+        "warehouseBinId": 1,
+        "warehouseBinIdObject": {
+            "id": 1,
+            "name": "MAIN INVENTORY",
+            "_info": {
+                "warehouseBin_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//procurement/warehouseBins/1"
+            }
+        },
+        "calculatedPriceFlag": false,
+        "calculatedCostFlag": false,
+        "warehouse": "Atlanta Warehouse",
+        "warehouseBin": "MAIN INVENTORY",
+        "taxCode": {
+            "id": 16,
+            "name": "AVATAX",
+            "_info": {
+                "taxCode_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//finance/taxCodes/16"
+            }
+        },
+        "listPrice": 140.000000,
+        "company": {
+            "id": 19308,
+            "identifier": "JM13161",
+            "name": "Jersey Mikes 13161",
+            "_info": {
+                "company_href": "https://api-na.myconnectwise.net/v4_6_release/apis/3.0//company/companies/19308"
+            }
+        },
+        "productClass": "Inventory",
+        "needToPurchaseFlag": false,
+        "minimumStockFlag": false,
+        "poApprovedFlag": false,
+        "uom": "Each",
+        "_info": {
+            "lastUpdated": "2020-06-09T17:58:25Z"
+        }
+    }
+]
