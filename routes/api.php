@@ -9,6 +9,7 @@ use \App\Http\Controllers\Bill\BudjetsController;
 use \App\Http\Controllers\Bill\CardController;
 use App\Http\Controllers\Bill\CardControllerV2;
 use \App\Http\Controllers\Bill\TransactionController;
+use App\Http\Controllers\Bill\TransactionControllerV2;
 
 // Route::get('/user', function (Request $request) {
 //     return $request->user();
@@ -65,4 +66,7 @@ Route::get('get-card-details/{card_id}', [CardController::class, 'get_card_detai
 Route::group(['prefix' => 'bill', 'as' => 'bill.'], function () {
     Route::get('cards-sync', [CardControllerV2::class, 'get_card_sync'])->name('cards-sync');
     Route::get('cards', [CardControllerV2::class, 'get_card_list'])->name('cards');
+
+    Route::get('transactions-sync', [TransactionControllerV2::class, 'get_transaction_sync'])->name('transactions-sync');
+    Route::get('transactions', [TransactionControllerV2::class, 'get_transaction_list'])->name('transactions');
 });
