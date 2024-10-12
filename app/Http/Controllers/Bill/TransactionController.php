@@ -86,11 +86,11 @@ class TransactionController extends Controller
             ]);
             $count++;
         }
-        if($count > 0) {
+        /*if($count > 0) {
             return response()->json([
                 'response_code' => 201,
                 'message' => "$count data successfully inserted"
             ]);
-        }
+        }*/
     }
 }
