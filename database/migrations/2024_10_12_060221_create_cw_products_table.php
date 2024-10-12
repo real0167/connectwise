@@ -48,7 +48,12 @@ return new class extends Migration
             $table->json('forecast_status')->nullable();
             $table->string('product_class')->nullable();
             $table->json('tax_code')->nullable();
-            $table->json('company')->nullable(); 
+
+            $table->bigInteger('company_id')->nullable();
+            $table->string('company_name')->nullable();
+            $table->string('company_identifier')->nullable();
+            
+            $table->json('company')->nullable();
             $table->string('uom')->nullable();
             $table->timestamp('purchase_date')->nullable();
             $table->decimal('list_price', 10, 2)->nullable();

@@ -2,6 +2,7 @@
 
 namespace App\Models\Bill;
 
+use App\Models\Cw\Product;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -30,4 +31,10 @@ class Card extends Model
         'created_time',
         'updated_time',
     ];
+
+    // Define a relationship to CwProduct (if needed)
+    public function products()
+    {
+        return $this->belongsTo(Product::class, 'name', 'company_identifier');
+    }
 }

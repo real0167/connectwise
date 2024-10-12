@@ -140,9 +140,16 @@ class TransactionControllerV2 extends Controller
 
     public function get_transaction_list()
     {
-        $allTransactions = Transaction::all();
+        // $allTransactions = Transaction::all();
 
-        // Return all cards
-        return response()->json($allTransactions);
+        // // Return all cards
+        // return response()->json($allTransactions);
+
+        $transactions = Transaction::with(['card' => function ($query) {
+            $query->with(['products']); // Load related products for each card
+        }])->get();
+            
+
+        return response()->json($transactions);
     }
 }

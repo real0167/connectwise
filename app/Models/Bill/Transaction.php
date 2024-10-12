@@ -2,6 +2,7 @@
 
 namespace App\Models\Bill;
 
+use App\Models\Cw\Product;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -42,4 +43,11 @@ class Transaction extends Model
         'reviews',
         'reviewers'
     ];
+
+
+    // Define relationship to Card
+    public function card()
+    {
+        return $this->belongsTo(Card::class, 'card_id', 'bill_card_id');
+    }
 }

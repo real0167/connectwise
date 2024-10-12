@@ -12,14 +12,16 @@ use Illuminate\Support\Facades\Storage;
 
 class ProductController extends Controller
 {
-    public function get_access_token() {
+    public function get_access_token()
+    {
         return AccessPrivileges::where('api_environment', 'production')
             ->where('source_platform', 'connect-wise')
             ->where('status', 1)
             ->first();
     }
 
-    private function make_api_request($api_path) {
+    private function make_api_request($api_path)
+    {
         try {
             // Get access token and decode required values
             $access_token = $this->get_access_token();
@@ -28,14 +30,14 @@ class ProductController extends Controller
             $privateKey = base64_decode($access_token->private_key);
             $authString = base64_encode("$company+$publicKey:$privateKey");
             $client_id = base64_decode($access_token->client_id);
-            
+
             // Build the API endpoint URL
             $apiHost = "https://na.myconnectwise.net/v4_6_release/apis/3.0";
             $apiEndpoint = rtrim($apiHost, '/') . $api_path;
-    
+
             // Path to the 'cacert.pem' file
             $certPath = Storage::path('cacert.pem');  // Ensure 'cacert.pem' is in the storage path
-    
+
             // Make the API request with the specified certificate and headers
             $response = Http::withHeaders([
                 'Authorization' => "Basic $authString",
@@ -44,7 +46,7 @@ class ProductController extends Controller
             ])->withOptions([
                 'verify' => $certPath, // Specify the CA bundle
             ])->get($apiEndpoint);
-    
+
             if ($response->failed()) {
                 Log::error('API request failed', [
                     'url' => $apiEndpoint,
@@ -53,7 +55,7 @@ class ProductController extends Controller
                 ]);
                 throw new \Exception('API request failed with status: ' . $response->status());
             }
-    
+
             return $response->json();
         } catch (\Exception $e) {
             Log::error('Error during API request', ['message' => $e->getMessage()]);
@@ -61,17 +63,18 @@ class ProductController extends Controller
         }
     }
 
-    public function cw_products_syc(Request $request) {
+    public function cw_products_syc(Request $request)
+    {
         try {
             // Build the API path for procurement products
             $api_path = '/procurement/products';
-    
+
             // Make the API request
             $data = $this->make_api_request($api_path);
-    
+
             // Log the success response
             Log::info('API request successful', ['url' => $api_path, 'response' => $data]);
-    
+
             // Ensure the response contains products
             if (is_array($data)) {
                 foreach ($data as $productData) {
@@ -112,7 +115,12 @@ class ProductController extends Controller
                             'forecast_detail_id' => $productData['forecastDetailId'] ?? null,
                             'forecast_status' => json_encode($productData['forecastStatus'] ?? null),
                             'product_class' => $productData['productClass'] ?? null,
-                            'tax_code' => json_encode($productData['taxCode'] ?? null),    
+                            'tax_code' => json_encode($productData['taxCode'] ?? null),
+
+                            'company_id' => isset($productData['company']['id']) ? $productData['company']['id'] : null,
+                            'company_name' => isset($productData['company']['name']) ? $productData['company']['name'] : null,
+                            'company_identifier' => isset($productData['company']['identifier']) ? $productData['company']['identifier'] : null,
+
                             'company' => json_encode($productData['company'] ?? null),
                             'uom' => $productData['uom'] ?? null,
                             'purchase_date' => isset($productData['purchaseDate']) ? \Carbon\Carbon::parse($productData['purchaseDate']) : null,
@@ -126,7 +134,7 @@ class ProductController extends Controller
                 Log::warning('No products found in API response', ['response' => $data]);
                 return response()->json(['message' => 'No products found'], 204); // No content
             }
-    
+
             return response()->json(['message' => 'Products synced successfully.'], 200);
         } catch (\Exception $e) {
             // Log the error
@@ -135,12 +143,11 @@ class ProductController extends Controller
         }
     }
 
-    public function get_cw_products() {
+    public function get_cw_products()
+    {
         $allProducts = Product::all();
 
         // Return all products
         return response()->json($allProducts);
     }
-    
-    
 }

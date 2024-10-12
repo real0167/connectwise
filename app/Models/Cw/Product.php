@@ -2,6 +2,7 @@
 
 namespace App\Models\Cw;
 
+use App\Models\Bill\Transaction;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -11,10 +12,10 @@ class Product extends Model
 
     protected $table = 'cw_products';
 
-     // Specify the fields that can be mass assigned
+    // Specify the fields that can be mass assigned
     protected $fillable = [
         'cw_product_id',
-        'catalog_item', 
+        'catalog_item',
         'description',
         'sequence_number',
         'quantity',
@@ -45,6 +46,9 @@ class Product extends Model
         'purchase_date',
         'tax_code',
         'list_price',
+        'company_id',
+        'company_name',
+        'company_identifier',
         'company',
         'forecast_status',
         'product_class',
