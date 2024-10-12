@@ -10,6 +10,7 @@ use \App\Http\Controllers\Bill\CardController;
 use App\Http\Controllers\Bill\CardControllerV2;
 use \App\Http\Controllers\Bill\TransactionController;
 use App\Http\Controllers\Bill\TransactionControllerV2;
+use App\Http\Controllers\Cw\ProductController;
 
 // Route::get('/user', function (Request $request) {
 //     return $request->user();
@@ -69,4 +70,10 @@ Route::group(['prefix' => 'bill', 'as' => 'bill.'], function () {
 
     Route::get('transactions-sync', [TransactionControllerV2::class, 'get_transaction_sync'])->name('transactions-sync');
     Route::get('transactions', [TransactionControllerV2::class, 'get_transaction_list'])->name('transactions');
+});
+
+
+Route::group(['prefix' => 'cw', 'as' => 'cw.'], function () {
+    Route::get('products-sync', [ProductController::class, 'cw_products_syc'])->name('products-sync');
+    Route::get('products', [ProductController::class, 'get_cw_products'])->name('products');
 });
